@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknofest 2023 - Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* responsive video lightbox (gallery-item-4 style) */
+        #video-lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.8);
+            z-index: 9999;
+        }
+        #video-lightbox .video-modal-content {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            width: 90%;
+            max-width: 900px;
+            background: #000;
+        }
+        #video-lightbox .video-modal-content iframe,
+        #video-lightbox .video-modal-content video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        #video-modal-close, .modal-close {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            background: transparent;
+            color: #fff;
+            border: 0;
+            font-size: 28px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        /* FIXED: two cards side-by-side, no overlap */
+        .video-grid-normal {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-top: 18px;
+        }
+        .video-card {
+            flex: 0 0 calc(50% - 9px);
+            max-width: calc(50% - 9px);
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .video-preview-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            overflow: hidden;
+            background: #111;
+            border-radius: 6px;
+        }
+        .video-preview-wrapper img,
+        .video-preview-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .story-play-button {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 32px;
+            pointer-events: none;
+        }
+        .video-card p { margin-top: 8px; }
+
+        @media (max-width:700px) {
+            .video-card { flex: 0 0 100%; max-width: 100%; }
+        }
+
+        /* photo grid kept */
+        .photo-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:20px; }
+        .photo-grid a img { width:100%; height:160px; object-fit:cover; display:block; border-radius:4px; }
+        @media (max-width:900px){ .photo-grid { grid-template-columns:repeat(2,1fr); } .photo-grid a img { height:140px; } }
+        @media (max-width:480px){ .photo-grid a img { height:120px; } }
+    </style>
+</head>
+<body>
+
+        <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Asadbek Kenjaev</a>
+                
+                <ul class="nav-links">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="timeline.html">Timeline</a></li> 
+                    <li><a href="gallery.html" class="nav-active">Gallery</a></li> 
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <ul class="lang-switcher">
+                        <li><a href="gallery.html" class="lang-active">EN</a></li>
+                        <li><a href="gallery-tr.html" class="lang-inactive">TR</a></li>
+                        <li><a href="gallery-ru.html" class="lang-inactive">RU</a></li>
+                        <li><a href="gallery-uz.html" class="lang-inactive">UZ</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <a href="gallery.html" class="btn-back" style="margin-top: 40px;">&larr; Back to Full Gallery</a>
+
+            <section id="about-new" class="about-page-grid" style="padding-top: 0;">
+                <aside class="about-side-heading"><h2>THE STORY</h2></aside>
+                <div class="about-main-content">
+                    <div class="about-text-block">
+                        <h1>Teknofest 2023</h1>
+                        <div class="card-meta" style="margin-bottom: 25px; font-size: 1rem;">
+                            <span><i class="fas fa-calendar-alt"></i> April 2023 (11th Grade)</span>
+                            <span style="margin-left:12px;"><i class="fas fa-map-marker-alt"></i> Atatürk Airport, Istanbul</span>
+                        </div>
+                        <span class="card-tag" style="position: static; display: inline-block; background-color: var(--border-light); color: var(--primary-hover); margin-bottom: 15px;">Technology</span>
+                        <p>During my 11th-grade year, as School President, I helped organize our school's trip to Teknofest 2023. This wasn't just any field trip; it was a massive undertaking. We coordinated several buses to take multiple classes to Turkey's, and one of the world's, largest aviation, space, and technology festivals.</p>
+                    </div>
+
+                    <div class="about-image-block"><img src="images/item6-main-1.jpg" alt="Teknofest general view"></div>
+                    <div class="about-text-block"><h3>A Glimpse into the Future</h3><p>Stepping into the festival at Atatürk Airport was like walking into the future. We saw everything: advanced drones (UAVs), rockets, new defense industry hardware, tanks, and innovations in cybersecurity and renewable energy. The entire place was buzzing with energy, competitions, and an incredible exchange of ideas.</p></div>
+                    <div class="about-image-block"><img src="images/item6-main-2.jpg" alt="Drones"></div>
+                    <div class="about-text-block"><h3>Inspiration and Motivation</h3><p>For me, this trip was transformative. Seeing what we were capable of, especially in aerospace, was deeply motivating. It was at Teknofest that several of my own project ideas began to form. I left the event with a renewed drive and immediately began researching new concepts.</p>
+                    <p>We also saw several political leaders and industry pioneers. Seeing Selçuk Bayraktar, a key figure in Turkey's UAV technology, was a great honor and added to the inspiration of the day.</p></div>
+                    <div class="about-image-block"><img src="images/item6-main-3.jpg" alt="Selçuk Bayraktar or a Bayraktar drone"></div>
+                    <div class="about-image-block"><img src="images/item6-main-4.jpg" alt="Students exploring the festival"></div>
+                </div>
+            </section>
+
+            <section class="photo-gallery-bottom">
+                <div class="container">
+                    <h2>Event Videos</h2>
+                    <p class="section-subtitle" style="text-align: center;">Videos from the festival grounds.</p>
+
+                    
+                    <div class="video-grid-normal">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pt1K4vTrTMk?si=5w06TTOv1in0e06T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                        <iframe width="315" height="560" src="https://www.youtube.com/embed/J8eFhZeSliA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="photo-gallery-bottom" style="background-color: var(--background-white); border-top: 2px solid var(--background-light);">
+                <div class="container">
+                    <h2>Additional Event Photos</h2>
+                    <p class="section-subtitle" style="text-align: center;">More moments from Teknofest 2023.</p>
+                    <div class="photo-grid">
+                        <a href="images/item6-sub-1.jpg"><img src="images/item6-sub-1.jpg" alt=""></a>
+                        <a href="images/item6-sub-2.jpg"><img src="images/item6-sub-2.jpg" alt=""></a>
+                        <a href="images/item6-sub-3.jpg"><img src="images/item6-sub-3.jpg" alt=""></a>
+                        <a href="images/item6-sub-4.jpg"><img src="images/item6-sub-4.jpg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Asadbek Kenjaev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="video-lightbox" class="video-modal-overlay" aria-hidden="true">
+        <button id="video-modal-close" class="modal-close" aria-label="Close video">&times;</button>
+        <div class="video-modal-content"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoCards = document.querySelectorAll('.video-card');
+            const lightbox = document.getElementById('video-lightbox');
+            const lightboxContent = document.querySelector('#video-lightbox .video-modal-content');
+            const closeButton = document.getElementById('video-modal-close');
+
+            if (!lightbox || !lightboxContent || !closeButton) return;
+
+            function openModal() {
+                lightbox.style.display = 'flex';
+                lightbox.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeModal() {
+                lightbox.style.display = 'none';
+                lightboxContent.innerHTML = '';
+                lightbox.setAttribute('aria-hidden', 'true');
+            }
+
+            closeButton.addEventListener('click', closeModal);
+            lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeModal(); });
+
+            videoCards.forEach(card => {
+                const videoSrc = card.getAttribute('data-video-src');
+                if (!videoSrc) return;
+
+                const activate = () => {
+                    if (videoSrc.includes('youtube.com') || videoSrc.includes('youtu.be')) {
+                        const separator = videoSrc.includes('?') ? '&' : '?';
+                        const src = `${videoSrc}${separator}autoplay=1&rel=0`;
+                        lightboxContent.innerHTML = `<iframe src="${src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+                    } else {
+                        lightboxContent.innerHTML = `
+                            <video controls autoplay style="width:100%; height:100%; object-fit: contain;">
+                                <source src="${videoSrc}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        `;
+                    }
+                    openModal();
+                };
+
+                card.addEventListener('click', activate);
+                card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') activate(); });
+
+                const previewVideo = card.querySelector('video');
+                const playButton = card.querySelector('.story-play-button');
+                if (previewVideo) {
+                    card.addEventListener('mouseenter', () => { previewVideo.play(); if (playButton) playButton.style.opacity='0'; });
+                    card.addEventListener('mouseleave', () => { previewVideo.pause(); previewVideo.currentTime = 0; if (playButton) playButton.style.opacity='1'; });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
