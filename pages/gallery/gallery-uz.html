@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galereya - Asadbek Kenjaev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="main-container header-content">
+            <a href="../../uz.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="gallery.html" class="lang-inactive">EN</a></li>
+                <li><a href="gallery-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="gallery-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="gallery-uz.html" class="lang-active">UZ</a></li>
+                <li><a href="gallery-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="../contact/contact-uz.html" class="btn btn-primary nav-contact-btn">Aloqa</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="../about/about-uz.html">Men Haqimda</a></li>
+                        <li><a href="../timeline/timeline-uz.html">Vaqt jadvali</a></li>
+                        <li><a href="gallery-uz.html" class="nav-active">Galereya</a></li>
+                        <li><a href="../projects/projects-uz.html">Loyihalar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
+        
+        <section class="gallery-hero">
+            <div class="container">
+                <h1>Mening o'rta maktab sayohatim</h1>
+                <p>Bugun men kim ekanligimni shakllantiradigan xotiralar, lahzalar va muhim voqealar to'plami.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="gallery-full-page">
+                
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">Barcha yillar</button>
+                    <button class="filter-btn" data-filter="2019">2019</button>
+                    <button class="filter-btn" data-filter="2020">2020</button>
+                    <button class="filter-btn" data-filter="2021">2021</button>
+                    <button class="filter-btn" data-filter="2022">2022</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2025">2025</button>
+                </div>
+
+                <div class="gallery-main-grid">
+                    
+                    <a href="../../gallery-items/item-2/gallery-item-2.html" class="gallery-card" data-year="2021">
+                        <div class="card-image"><img src="images/item2-main-1.jpg" alt="10-sinf eng yaxshi o'quvchisi mukofoti"><span class="card-tag">Yutuqlar</span></div>
+                        <div class="card-content"><h3 class="card-title">10-sinf eng yaxshi o'quvchisi</h3><p class="card-description">10-sinf mukofot marosimidan bir lavha, katta shaxsiy yutuqni belgilovchi.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Iyun 2021</span><span><i class="fas fa-map-marker-alt"></i> Maktab zali</span></div></div>
+                    </a>
+
+                    <a href="../../gallery-items/item-3/gallery-item-3.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item3-main-1.jpg" alt="Milliy talabalar sammiti"><span class="card-tag">Yetakchilik</span></div>
+                        <div class="card-content"><h3 class="card-title">Milliy talabalar sammiti</h3><p class="card-description">Maktab prezidenti sifatida Anqaradagi 3 kunlik milliy sammitda maktabimni ifodalash.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> May 2022</span><span><i class="fas fa-map-marker-alt"></i> Qizilcahamam, Anqara</span></div></div>
+                    </a>
+
+                    <a href="../../gallery-items/item-4/gallery-item-4.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item4-main-1.jpg" alt="Adabiyot klubi rahbari"><span class="card-tag">Yetakchilik</span></div>
+                        <div class="card-content"><h3 class="card-title">Adabiyot klubi rahbari</h3><p class="card-description">11-sinfda klub rahbari sifatida munozaralar, simpoziumlar va kutubxona tadbirlarini tashkil qilish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022-2023</span><span><i class="fas fa-map-marker-alt"></i> Maktab kutubxonasi va zal</span></div></div>
+                    </a>
+
+                    <a href="../../gallery-items/item-5/gallery-item-5.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item5-main-1.jpg" alt="Chanakkale sayohati"><span class="card-tag">Tadbirlar</span></div>
+                        <div class="card-content"><h3 class="card-title">Chanakkale sayohati</h3><p class="card-description">Chanakkalening tarixiy jang maydonlariga chuqur ta'sirli sayohat, mening nuqtai nazarimni o'zgartirgan sayohat.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Bahor 2023</span><span><i class="fas fa-map-marker-alt"></i> Chanakkale, Turkiya</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-6-uz.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item6-main-1.jpg" alt="Texnofest 2023"><span class="card-tag">Texnologiya</span></div>
+                        <div class="card-content"><h3 class="card-title">Texnofest 2023</h3><p class="card-description">Istanbuldagi Turkiyaning eng katta texnologiya festivaliga maktab sayohatini tashkil qilish. Kelajakga ilhomlantiradigan qarash.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Aprel 2023</span><span><i class="fas fa-map-marker-alt"></i> Istanbul, Turkiya</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-7-uz.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item7-main-1.jpg" alt="San'at ko'rgazmasi sayohati"><span class="card-tag">San'at va tadbirlar</span></div>
+                        <div class="card-content"><h3 class="card-title">San'at ko'rgazmasi sayohati</h3><p class="card-description">Sinfdoshlarimda san'atga muhabbatni uyg'otish uchun munitsipal san'at va portret ko'rgazmasiga sayohatni tashkil qilish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Bahor 2023</span><span><i class="fas fa-map-marker-alt"></i> Shahar san'at galereyasi</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-8-uz.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item8-main-1.jpg" alt="Chamlija masjidi sayohati"><span class="card-tag">Madaniyat va tadbirlar</span></div>
+                        <div class="card-content"><h3 class="card-title">Chamlija masjidi tashrifi</h3><p class="card-description">Yevropaning eng katta masjidi, san'at, madaniyat va tarix markaziga maktab sayohatini tashkil qilish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Bahor 2023</span><span><i class="fas fa-map-marker-alt"></i> Istanbul, Turkiya</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-9-uz.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item9-main-1.jpg" alt="Mustafa Armag'an bilan tarix suhbatlari"><span class="card-tag">Tarix va o'rganish</span></div>
+                        <div class="card-content"><h3 class="card-title">Mustafa Armag'an bilan tarix suhbatlari</h3><p class="card-description">Taniqli tarixchi Mustafa Armag'an bilan 6 haftalik eksklyuziv tarix suhbatlari seriyasida qatnashish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022 (juma oqshomlari)</span><span><i class="fas fa-map-marker-alt"></i> Munitsipal zal va shaxsiy kutubxona</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-10-uz.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item10-main-1.jpg" alt="12-sinf 1-semestr birinchisi"><span class="card-tag">Yutuqlar</span></div>
+                        <div class="card-content"><h3 class="card-title">12-sinf 1-semestr birinchisi</h3><p class="card-description">Barcha boshqa mas'uliyatlarimni muvozanatlab, 97 o'rtacha ball bilan 12-sinf birinchi semestrida birinchi o'rinni qo'lga kiritish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Yanvar 2024</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-11-uz.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item11-main-1.jpg" alt="12-sinf oxirgi semestr birinchisi"><span class="card-tag">Yutuqlar</span></div>
+                        <div class="card-content"><h3 class="card-title">12-sinf oxirgi semestr birinchisi</h3><p class="card-description">98 o'rtacha ball bilan bitiruv - bu mening o'rta maktab karyeramning eng yuqori natijasi. Tinimsiz mehnatning isboti.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Iyun 2024</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-12-uz.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item12-main-1.jpg" alt="Oyning o'quvchisi"><span class="card-tag">Yutuqlar</span></div>
+                        <div class="card-content"><h3 class="card-title">Oyning o'quvchisi (Oktyabr)</h3><p class="card-description">Namunaviy xatti-harakat va maktab tadbirlarida faol ishtirok etgani uchun "Oyning o'quvchisi" etib saylandi.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Oktyabr 2022</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-13-uz.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item13-main-1.jpg" alt="Mehmet Akif xotirasiga bag'ishlangan pyesa"><span class="card-tag">San'at va liderlik</span></div>
+                        <div class="card-content"><h3 class="card-title">Mehmet Akif xotirasiga bag'ishlangan pyesa</h3><p class="card-description">Maktab va tuman uchun 3 oylik teatr spektaklini birgalikda tashkil qilish va ijro etish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Kuz 2022</span><span><i class="fas fa-map-marker-alt"></i> Maktab va tuman sahnasi</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-14-uz.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item14-main-1.jpg" alt="Respublika Kuni Nishoni"><span class="card-tag">Tadbirlar va Yetakchilik</span></div>
+                        <div class="card-content"><h3 class="card-title">Respublika Kuni Nishoni</h3><p class="card-description">Turkiya Respublikasining 99-yilligi uchun maktabimizning 10 kunlik bayramini tashkil qilish va ijro etish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Oktyabr 2022</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-15-uz.html" class="gallery-card" data-year="2021">
+                        <div class="card-image"><img src="images/item15-main-1.jpg" alt="Dinlararo Video Loyihasi"><span class="card-tag">Madaniyat va Tadbirlar</span></div>
+                        <div class="card-content"><h3 class="card-title">Dinlararo Video Loyihasi</h3><p class="card-description">Maktab madaniy tadbiri uchun ko'plab tillarda aytilgan bitta jumlani o'z ichiga olgan video yaratish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022 (11-sinf)</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-16-uz.html" class="gallery-card" data-year="2021">
+                        <div class="card-image"><img src="images/item16-main-1.jpg" alt="Nashid Ijrosi"><span class="card-tag">San'at va Ijro</span></div>
+                        <div class="card-content"><h3 class="card-title">Nashid Ijrosi</h3><p class="card-description">10-sinf madaniy tadbiri uchun an'anaviy nashidlarni ijro etish uchun ikki do'st bilan bir oylik tayyorgarlik.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2021 (10-sinf)</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-17-uz.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item17-main-1.jpg" alt="Qur'on Qiroat Tanlov"><span class="card-tag">Yutuqlar</span></div>
+                        <div class="card-content"><h3 class="card-title">Qur'on Qiroat Tanlov</h3><p class="card-description">Maktabda 1-o'rinni qo'lga kiritdim va tuman darajasida raqobatlashdim, men va otam uchun faxrli lahza.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022 (11-sinf)</span><span><i class="fas fa-map-marker-alt"></i> Maktab va tuman</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-18-uz.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item18-main-1.jpg" alt="Chanakkale'ga qaytish"><span class="card-tag">Tadbirlar va tarix</span></div>
+                        <div class="card-content"><h3 class="card-title">Chanakkale'ga qaytish</h3><p class="card-description">Gallipolga ikkinchi sayohatim, bu safar 12-sinf o'quvchisi sifatida, tashrifni tashkil qilishga yordam berdim va tarixning yangi, chuqurroq qatlamlarini kashf qildim.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Bahor 2024</span><span><i class="fas fa-map-marker-alt"></i> Chanakkale, Turkiya</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-19-uz.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item19-main-1.jpg" alt="TÜGVA kechki ovqati"><span class="card-tag">Madaniyat va ijro</span></div>
+                        <div class="card-content"><h3 class="card-title">TÜGVA kechki ovqatida Qur'on qiroati</h3><p class="card-description">TÜGVA kechki ovqat tadbirida davlat va siyosiy rahbarlar uchun katta sahnada Qur'on qiroati ijrosi.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Mart 2023</span><span><i class="fas fa-map-marker-alt"></i> Ümraniye, Istanbul</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-20-uz.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item20-main-1.jpg" alt="Juma namozini boshqarish"><span class="card-tag">Yetakchilik va jamiyat</span></div>
+                        <div class="card-content"><h3 class="card-title">Imom sifatida Juma namozini o'qitish</h3><p class="card-description">Sahra-i Kabir masjidida minglab odamlar uchun Juma namozini o'qitish va xutba o'qish katta sharaf.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> May 2024</span><span><i class="fas fa-map-marker-alt"></i> Sahra-i Kabir masjidi</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-21-uz.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item21-main-1.jpg" alt="Maktab iftor qiroati"><span class="card-tag">Madaniyat va ijro</span></div>
+                        <div class="card-content"><h3 class="card-title">Maktab iftor ziyofatida Qur'on qiroati</h3><p class="card-description">Ota-onalar va o'qituvchilar uchun ajoyib maktab iftor ziyofatida do'stim Mehmet Akif bilan Qur'on qiroati.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 19 aprel 2022</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-22-uz.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item22-main-1.jpg" alt="Vaqtini Kuşanmak loyihasi"><span class="card-tag">Ta'lim va madaniyat</span></div>
+                        <div class="card-content"><h3 class="card-title">Vaqtini Kuşanmak loyihasi</h3><p class="card-description">Ma'ruzachilar Hüseyin Arıcı va Hüseyin Hatipoğlu bilan chuqur bilim va suhbat kechasi.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 11 yanvar 2023</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-23-uz.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item23-main-1.jpg" alt="Universitet sayohatlari"><span class="card-tag">Akademik va yetakchilik</span></div>
+                        <div class="card-content"><h3 class="card-title">Universitet sayohatlarini tashkil qilish</h3><p class="card-description">Maktabdagi oxirgi yilimizda sinfim uchun hayotiy ahamiyatga ega universitet sayohatlarini (Medipol, Aydin) tashkil qilish va ishtirok etish.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2023-2024</span><span><i class="fas fa-map-marker-alt"></i> Istanbul, Turkiya</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-24-uz.html" class="gallery-card" data-year="all">
+                        <div class="card-image"><img src="images/item24-main-1.jpg" alt="Sevimli mashg'ulot: Bilyard"><span class="card-tag">Sevimli mashg'ulot</span></div>
+                        <div class="card-content"><h3 class="card-title">Sevimli mashg'ulot: Bilyard</h3><p class="card-description">4 yillik ehtiros. Shunchaki o'yindan ko'proq, bu geometriya, hisoblash va aniqlikda qiziqarli mashq.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2020-2024</span><span><i class="fas fa-map-marker-alt"></i> Bilyard zallari</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-25-uz.html" class="gallery-card" data-year="all">
+                        <div class="card-image"><img src="images/item25-main-1.jpg" alt="Sevimli mashg'ulot: Fitnes va intizom"><span class="card-tag">Sevimli mashg'ulot va sog'liq</span></div>
+                        <div class="card-content"><h3 class="card-title">Sevimli mashg'ulot: Fitnes va intizom</h3><p class="card-description">Sevimli mashg'ulotdan ko'proq, fitnes menga intizomni o'rgatdi, sog'ligimni yaxshiladi va motivatsiyamni oshirdi.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Davom etmoqda</span><span><i class="fas fa-map-marker-alt"></i> Sport zali</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-26-uz.html" class="gallery-card" data-year="all">
+                        <div class="card-image"><img src="images/item26-main-1.jpg" alt="Hankando: Turk jang san'ati"><span class="card-tag">Jang san'atlari</span></div>
+                        <div class="card-content"><h3 class="card-title">Hankando: Turk jang san'ati</h3><p class="card-description">Hankando'dagi 2 yillik sayohatim, Istanbuldagi birinchi 5 talabadan biri bo'lishdan yordamchi o'qituvchi bo'lishgacha.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022-2024</span><span><i class="fas fa-map-marker-alt"></i> Hankando akademiyasi</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-27-uz.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item27-main-1.jpg" alt="Tanzimat yozuvchilari loyihasi"><span class="card-tag">Akademik va adabiyot</span></div>
+                        <div class="card-content"><h3 class="card-title">Tanzimat yozuvchilari loyihasi</h3><p class="card-description">Tanzimat yozuvchilarining uylari va muzeylarini tashrif buyurib, video loyiha va to'liq ball bilan yakunlangan bir yillik ko'ngilli loyiha.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2023-2024 (12-sinf)</span><span><i class="fas fa-map-marker-alt"></i> Istanbul, Turkiya</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-28-uz.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item28-main-1.jpg" alt="O'rta maktabdan bitiruv kuni"><span class="card-tag">Muhim voqea</span></div>
+                        <div class="card-content"><h3 class="card-title">O'rta maktabdan bitiruv kuni</h3><p class="card-description">95,53 GPA bilan eng yaxshi o'quvchi sifatida bitirdim va nutq so'zladim—to'rt yilning cho'qqisi.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Iyun 2024 (12-sinf)</span><span><i class="fas fa-map-marker-alt"></i> O'rta maktab</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-29-uz.html" class="gallery-card" data-year="2025">
+                        <div class="card-image">
+                            <img src="images/item29-main-1.jpg" alt="SAT marafoni">
+                            <span class="card-tag">Akademik va qat'iyat</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">SAT marafoni: 3 oyda 1400</h3>
+                            <p class="card-description">16 soatlik o'qish kunlari, cheksiz kutubxona mashg'ulotlari va o'zgarish va muvaffaqiyatga erishish qat'iyati haqida hikoya.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Yoz 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Shahar kutubxonasi</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Asadbek Kenjaev. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
