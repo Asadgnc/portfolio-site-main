@@ -4,239 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asadbek Kenjaev - Dijital Portfolyo</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Great+Vibes&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-
-    <div id="tsparticles"></div>
-
+<body class="home">
     <header>
-        <div class="container">
-            <nav>
-                <a href="tr.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about-tr.html">Hakkımda</a></li>
-                    <li><a href="timeline-tr.html">Zaman Tüneli</a></li> 
-                    <li><a href="gallery-tr.html">Galeri</a></li> 
-                    <li><a href="projects-tr.html">Projeler</a></li>
-                    <li><a href="contact-tr.html">İletişim</a></li>
-                </ul>
+        <div class="main-container header-content">
+            <a href="tr.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <ul class="lang-switcher">
-                    <li><a href="index.html" class="lang-inactive">EN</a></li>
-                    <li><a href="tr.html" class="lang-active">TR</a></li>
-                    <li><a href="ru.html" class="lang-inactive">RU</a></li>
-                    <li><a href="uz.html" class="lang-inactive">UZ</a></li>
-                </ul>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="index.html" class="lang-inactive">EN</a></li>
+                <li><a href="tr.html" class="lang-active">TR</a></li>
+                <li><a href="ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact-tr.html" class="btn btn-primary nav-contact-btn">İletişim</a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-content">
-            
-            <div class="hero-text">
-                <span class="hero-subtitle">BİLGİSAYAR MÜHENDİSLİĞİ ADAYI</span>
-                <h1>Merhaba, ben Asadbek Kenjaev.</h1>
-                <p class="hero-description">
-                    Kodlarla problem çözmeyi seven, yapay zeka ve web teknolojilerine odaklanmış tutkulu bir geliştiriciyim.
-                </p>
-                <a href="#project-preview" class="btn btn-primary">Projelerimi Gör</a>
-                <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
-            </div>
-            
-            <div class="hero-image">
-                <img src="images/my-photo.jpg" alt="Asadbek Kenjaev'in Profesyonel Fotoğrafı">
-            </div>
-            
-        </div>
-    </section>
-
     <main>
-        <div class="container">
-            
-            <section id="about" class="fade-in-on-scroll">
-                <h2>Hakkımda Kısa Bir Not</h2>
-                
-                <a href="about-tr.html" class="about-preview-link">
-                    <div class="about-preview-box">
-                        <div class="about-preview-image">
-                            <img src="images/my-photo.jpg" alt="Asadbek Kenjaev">
-                        </div>
-                        <div class="about-preview-text">
-                            <p>
-                                Hey, ben Asadbek Kenjaev! 👋 Dünyam, büyük, karmaşık fikirleri temiz ve işlevsel koda dönüştürmek etrafında dönüyor. Ben sadece bir Bilgisayar Mühendisliği adayı değilim; sınırsız bir merakla hareket eden tutkulu bir inşaatçıyım...
-                            </p>
-                            <span class="btn btn-secondary">Devamını Oku</span>
-                        </div>
-                    </div>
-                </a>
-            </section>
-
-
-            <section id="timeline" class="fade-in-on-scroll">
-                <h2>Zaman Tünelim</h2>
-                <p class="section-subtitle">Şimdiye kadarki akademik ve kişisel gelişim yolculuğum.</p>
-                <div class="timeline-container">
-                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2017</span><h3>Taşkent Matematik Yarışmaları</h3><p>Okulumda 1., Taşkent şehrinde (Özbekistan'ın Başkenti) 10. oldum. 🥇</p></div></div>
-                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2019</span><h3>Tam Puanla Ortaokul Mezuniyeti</h3><p>Özbekistan'da ortaokuldan tüm derslerden '5' (en yüksek not) ile mezun oldum. 📚</p></div></div>
-                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2020</span><h3>Lise Birincisi (9. Sınıf)</h3><p>Puanım 96.8291, GPA 4.0'a yakın. 🗣️</p></div></div>
-                    <div class="timeline-item timeline-item-hidden"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2021</span><h3>Okul Temsilcisi ve Başkanı Seçildim</h3><p>Ankara'da 1900 lise temsilcisi arasında okulumu temsil ettim. Ayrıca okulumun öğrenci meclisi başkanıydım.</p></div></div>
-                    <div class="timeline-item timeline-item-hidden"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2021</span><h3>Lise Birincisi (10. Sınıf)</h3><p>Puanım 93.8375, GPA 4.0'a yakın. 🗣️</p></div></div>
-                    <div class="timeline-item timeline-item-hidden"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2022</span><h3>Lise Edebiyat Kulübünü Kurdum</h3><p>Kulüpler haftasında Edebiyat Kulübü başkanı seçildim ve o yıl birçok organizasyon düzenledim. 🗣️</p></div></div>
-                    <div class="timeline-item timeline-item-hidden"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2023</span><h3>Lise Birincisi (12. Sınıf)</h3><p>Puanım 93.8375, GPA 4.0'a yakın.</p></div></div>
-                    <div class="timeline-item timeline-item-hidden"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2024</span><h3>Lise Genel Birincisi</h3><p>Final puanım 95.53, tüm öğrenciler arasında birinci olarak mezun oldum. 🗣️</p></div></div>
-                    <div class="timeline-item timeline-item-hidden"><div class="timeline-dot"></div><div class="timeline-content"><span class="timeline-date">2025</span><h3>SAT Hazırlığı</h3><p>YKS sınavına hazırlanmaya başladım ancak 9 ay sonra SAT'ye girmeye karar verdim. 🗣️</p></div></div>
-                </div>
-                <div class="timeline-button-container">
-                    <button id="timeline-load-more" class="btn btn-primary">Tüm Zaman Tünelini Göster</button>
-                </div>
-            </section>
-
-
-            <section id="gallery" class="fade-in-on-scroll">
-                <h2>Dijital Galerim 📸</h2>
-                <p class="section-subtitle">Yolculuğumu tanımlayan anlar, sertifikalar ve teknik konseptler.</p>
-                <div class="gallery-group">
-                    <h3>Akademik Başarılar ve Sertifikalar 📜</h3>
-                    <p>Sürekli öğrenmemin ve yeni becerilerde uzmanlaşma konusundaki kararlılığımın kanıtları.</p>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="images/gallery-1.jpg" alt="Sertifika 1">
-                            <div class="gallery-overlay">Python OOP Kursu Sertifikası</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/gallery-2.jpg" alt="Akademik Ödül">
-                            <div class="gallery-overlay">Lise Birinciliği Töreni</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/gallery-3.jpg" alt="Teknik Konsept">
-                            <div class="gallery-overlay">Blockchain Hashing Algoritması Diyagramı</div>
-                        </div>
+        <section class="hero-section">
+            <div class="main-container hero-grid">
+                <div class="hero-text">
+                    <span class="hero-subtitle">BİLGİSAYAR MÜHENDİSLİĞİ ADAYI</span>
+                    <h1>Merhaba, ben Asadbek Kenjaev.</h1>
+                    <p class="hero-description">
+                        Kod ile problem çözmeyi seven, yapay zeka ve web teknolojilerine odaklanan tutkulu bir geliştiriciyim.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Projelerimi Görüntüle</a>
+                        <a href="contact-tr.html" class="btn btn-secondary">İletişime Geç</a>
                     </div>
                 </div>
-                <div class="gallery-button-container">
-                    <a href="gallery-tr.html" class="btn btn-primary">Tüm Galeriyi Gör</a>
+                <div class="hero-image-wrapper" id="hero-anchor">
+                    <img src="images/my-photo.jpg" class="hero-image" alt="Asadbek Kenjaev'in Profesyonel Fotoğrafı">
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <!-- NAV: hero altından başlayacak şekilde buraya taşı (dil/contact header'da sabit) -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-tr.html">Hakkımda</a></li>
+                        <li><a href="timeline-tr.html">Zaman Çizelgesi</a></li>
+                        <li><a href="gallery-tr.html">Galeri</a></li>
+                        <li><a href="projects-tr.html">Projeler</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <span>TUTKULU GELİŞTİRİCİ</span> <span class="dot"></span>
+                <span>YAPAY ZEKA MERAKLISI</span> <span class="dot"></span>
+                <span>WEB TEKNOLOJİLERİ</span> <span class="dot"></span>
+                <span>PROBLEM ÇÖZÜCÜ</span> <span class="dot"></span>
+            </div>
+        </div>
 
-            <section id="project-preview" class="fade-in-on-scroll">
+        <section id="about" class="page-section">
+            <div class="main-container about-grid">
+                <div class="about-text-wrapper">
+                    <span class="section-subtitle-left">Hakkımda Kısaca</span>
+                    <h2>Teknolojiye olan tutkum ve kişisel yolculuğum.</h2>
+                    <p>
+                        Selam, ben Asadbek Kenjaev! 👋 Dünyam büyük, karmaşık fikirleri temiz, işlevsel koda dönüştürmeye dayanıyor. Sadece bir Bilgisayar Mühendisliği adayı değilim; sınırsız merakla hareket eden tutkulu bir geliştiriciyim...
+                    </p>
+                    <a href="about-tr.html" class="btn btn-secondary">Devamını Oku</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREVIEW: tüm gallery kartlarını burada göster (ana sayfada, projects bölümünden önce) -->
+        <section id="projects-preview" class="page-section">
+            <div class="main-container">
+                <span class="section-subtitle-left">Son İşlerim</span>
+                <h2>Seçilmiş Galeri</h2>
+                <!-- JS ile doldurulacak container -->
+                <div class="projects-preview-grid" id="projects-preview-grid">
+                    <!-- JS will render 28 gallery items here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section alt-bg">
+            <div class="main-container">
+                <span class="section-subtitle-left">Çalışmalarım</span>
                 <h2>Projelerim</h2>
-                <p class="section-subtitle">Becerilerimi ve tutkumu sergileyen çalışmalarım.</p>
                 <div class="project-grid">
-                    <div class="project-card">
-                        <img src="images/proje-1.jpg" alt="Proje 1 Ekran Görüntüsü">
+                    <a href="project-1-detail-tr.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/proje-1.jpg" alt="Proje 1 Ekran Görüntüsü">
+                        </div>
                         <div class="project-content">
                             <h3>UniVerse Türkiye</h3>
-                            <p>Türkiye'deki öğrenciler için üniversite seçme sürecini ve sınav danışmanlığını merkezileştirmeyi planlayan dijital bir platform.</p>
-                            <a href="project-1-detail-tr.html" class="btn btn-secondary">Detayları Gör</a>
+                            <p>Üniversite seçimi bilgileri ve sınav danışmanlığı için dijital bir platform.</p>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/proje-2.jpg" alt="Proje 2 Ekran Görüntüsü">
+                    </a>
+                    <a href="project-2-detail-tr.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/proje-2.jpg" alt="Proje 2 Ekran Görüntüsü">
+                        </div>
                         <div class="project-content">
                             <h3>Lise Web Sitesi</h3>
-                            <p>Lisem (9-12. sınıflar) için ders notları ve örnek sınav soruları sağlayan merkezi bir akademik platform.</p>
-                            <a href="project-2-detail-tr.html" class="btn btn-secondary">Detayları Gör</a>
+                            <p>Lisem için ders rehberleri sunan merkezi bir akademik hub.</p>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/proje-3.jpg" alt="Proje 3 Ekran Görüntüsü">
+                    </a>
+                    <a href="project-3-detail-tr.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/proje-3.jpg" alt="Proje 3 Ekran Görüntüsü">
+                        </div>
                         <div class="project-content">
-                            <h3>Temel YZ Modeli (TR-LLM Girişimi)</h3>
-                            <p>Türkiye için profesyonel düzeyde, egemen bir büyük dil modeli oluşturmaya yönelik devam eden bir Ar-Ge girişimi.</p>
-                            <a href="project-3-detail-tr.html" class="btn btn-secondary">Detayları Gör</a>
+                            <h3>Temel AI Modeli (TR-LLM)</h3>
+                            <p>Profesyonel düzeyde büyük dil modeli oluşturmaya yönelik bir Ar-Ge girişimi.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="projects-button-container">
-                    <a href="projects-tr.html" class="btn btn-primary">Tüm Projeleri Gör</a>
-                </div>
-            </section>
-
-            
-            <section id="testimonials" class="fade-in-on-scroll">
-                <h2>Başkaları Ne Diyor</h2>
-                <p class="section-subtitle">Meslektaşlardan, mentorlardan ve öğrencilerden referanslar.</p>
-                <div class="testimonial-grid">
-                    
-                    <div class="testimonial-card">
-                        <p class="quote">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Asadbek'in problem çözme konusundaki kararlılığı benzersizdir. Hızlı öğrenir ve her takım için gerçek bir kazançtır."
-                        </p>
-                        <p class="author">John Doe</p>
-                        <p class="title">Kıdemli Geliştirici, TechCorp</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <p class="quote">
-                            "Asadbek'e mentorluk yapma zevkini yaşadım. Merakı bulaşıcı ve karmaşık YZ kavramlarını kavrama yeteneği gerçekten etkileyici. Önünde parlak bir gelecek var."
-                        </p>
-                        <p class="author">Dr. Jane Smith</p>
-                        <p class="title">Bilgisayar Bilimleri Profesörü</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <p class="quote">
-                            "Lise web sitesi projesinde Asadbek ile birlikte çalışmak harika bir deneyimdi. Doğuştan bir lider ve son derece yetenekli bir işbirlikçi."
-                        </p>
-                        <p class="author">Alex Johnson</p>
-                        <p class="title">Sınıf Arkadaşı & Proje Partneri</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <p class="quote">
-                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
-                        </p>
-                        <p class="author">Emily White</p>
-                        <p class="title">Öğrenci</p>
-                    </div>
-
-                </div>
-            </section>
-
-
-            <section id="contact" class="fade-in-on-scroll">
-                <h2>İletişime Geçelim</h2>
-                <p class="section-subtitle">
-                    Beni bu platformlarda bulun veya bir e-posta gönderin.
-                </p>
-                <div class="social-icons">
-                    <a href="https://linkedin.com/in/asadnc" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/Asadgnc" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:a.kenja3683@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://www.instagram.com/asadnc/" target="_blank" aria-label="Instagram"> <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://x.com/asadknc" target="_blank" aria-label="X (Twitter)"> <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="http://www.youtube.com/@Asad-yz9zn" target="_blank" aria-label="YouTube"> <i class="fab fa-youtube"></i>
                     </a>
                 </div>
-            </section>
+                <div class="section-button-container">
+                    <a href="projects-tr.html" class="btn btn-primary">Tüm Projeleri Görüntüle</a>
+                </div>
             </div>
-    </main>
+        </section>
 
+        <section id="timeline" class="page-section">
+            <div class="main-container">
+                <span class="section-subtitle-left">Yolculuğum</span>
+                <h2>Önemli Kilometre Taşları</h2>
+                <div class="timeline-simple-grid">
+                    <div class="timeline-simple-item">
+                        <span class="timeline-simple-date">2017</span>
+                        <h3>Taşkent'te Matematik Yarışmaları</h3>
+                        <p>Okulumda 1., Taşkent şehrinde 10. oldum. 🥇</p>
+                    </div>
+                    <div class="timeline-simple-item">
+                        <span class="timeline-simple-date">2019</span>
+                        <h3>Ortaokulu Mezun Oldum (Tam Not)</h3>
+                        <p>Özbekistan'da ortaokulu en yüksek notlarla bitirdim. 📚</p>
+                    </div>
+                    <div class="timeline-simple-item">
+                        <span class="timeline-simple-date">2021</span>
+                        <h3>Okul Temsilcisi Seçildim</h3>
+                        <p>Ankara'da 1.900 öğrenci temsilcisi arasında okulumu temsil ettim.</p>
+                    </div>
+                    <div class="timeline-simple-item">
+                        <span class="timeline-simple-date">2024</span>
+                        <h3>Lise Birincisi (Genel)</h3>
+                        <p>95.53 final notu ile birinci olarak mezun oldum. 🗣️</p>
+                    </div>
+                </div>
+                <div class="section-button-container">
+                    <a href="timeline-tr.html" class="btn btn-secondary">Tüm Zaman Çizelgesini Görüntüle</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="page-section">
+            <div class="main-container testimonials-wrap">
+                <span class="section-subtitle-left">Testimonials</span>
+                <h2>What others say about me</h2>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-quote">“Great collaborator — fast, creative and detail-oriented. Delivered above expectations.”</div>
+                        <div class="testimonial-meta">
+                            <img src="images/testimonial-1.jpg" alt="Client photo" class="testimonial-photo">
+                            <div>
+                                <strong>Jane Doe</strong>
+                                <div class="meta-role">Product Manager</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-quote">“Clear communication and exceptional technical skills. Highly recommended.”</div>
+                        <div class="testimonial-meta">
+                            <img src="images/testimonial-2.jpg" alt="Client photo" class="testimonial-photo">
+                            <div>
+                                <strong>John Smith</strong>
+                                <div class="meta-role">Founder</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-quote">“Brings vision and execution together — a pleasure to work with.”</div>
+                        <div class="testimonial-meta">
+                            <img src="images/testimonial-3.jpg" alt="Client photo" class="testimonial-photo">
+                            <div>
+                                <strong>Anna Lee</strong>
+                                <div class="meta-role">Design Lead</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="page-section cta-section">
+            <div class="main-container cta-content">
+                <span class="section-subtitle-left">İletişime Geçin</span>
+                <h2>Birlikte çalışalım</h2>
+                <p>Bir proje, işbirliği veya sadece merhaba demek isterseniz — aşağıdan benimle iletişime geçin.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>E-posta</h3>
+                        <a href="mailto:a.kenja3683@gmail.com">a.kenja3683@gmail.com</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Telefon</h3>
+                        <a href="tel:+905436989117">+90 (543) 698 91 17</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Konum</h3>
+                        <div>İstanbul, Türkiye</div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Merhaba deyin</h3>
+                        <a class="btn btn-primary" href="contact-tr.html">İletişim formunu aç</a>
+                    </div>
+                </div>
+
+                <div class="social-icons" style="margin-top:28px;">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <footer>
-        <div class="container">
+        <div class="main-container footer-content">
+            <a href="tr.html" class="logo">Asadbek Kenjaev</a>
             <p>&copy; 2025 Asadbek Kenjaev. Tüm hakları saklıdır.</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-    <script src="app.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <script src="app.js"></script> 
 </body>
 </html>

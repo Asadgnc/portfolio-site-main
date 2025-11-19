@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proje: UniVerse Türkiye - Asadbek Kenjaev</title>
+    <title>Proje: UniVerse Turkiye - Asadbek Kenjaev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,56 +12,68 @@
 <body>
 
     <header>
-        <div class="container">
-            <nav>
-                <a href="tr.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about-tr.html">Hakkımda</a></li>
-                    <li><a href="timeline-tr.html">Zaman Tüneli</a></li> 
-                    <li><a href="gallery-tr.html">Galeri</a></li> 
-                    <li><a href="projects-tr.html" class="nav-active">Projeler</a></li>
-                </ul>
+        <div class="main-container header-content">
+            <a href="tr.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <div class="nav-right">
-                    <ul class="lang-switcher">
-                        <li><a href="project-1-detail.html" class="lang-inactive">EN</a></li>
-                        <li><a href="project-1-detail-tr.html" class="lang-active">TR</a></li>
-                        <li><a href="project-1-detail-ru.html" class="lang-inactive">RU</a></li>
-                        <li><a href="project-1-detail-uz.html" class="lang-inactive">UZ</a></li>
-                    </ul>
-                    <a href="contact-tr.html" class="btn btn-primary nav-contact-btn">İletişim</a>
-                </div>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="project-1-detail.html" class="lang-inactive">EN</a></li>
+                <li><a href="project-1-detail-tr.html" class="lang-active">TR</a></li>
+                <li><a href="project-1-detail-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="project-1-detail-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="project-1-detail-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact-tr.html" class="btn btn-primary nav-contact-btn">İletişim</a>
         </div>
     </header>
 
-    <main class="project-detail-page">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-tr.html">Hakkımda</a></li>
+                        <li><a href="timeline-tr.html">Zaman Çizelgesi</a></li>
+                        <li><a href="gallery-tr.html">Galeri</a></li>
+                        <li><a href="projects-tr.html" class="nav-active">Projeler</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             <section class="project-detail-header">
-                <a href="projects-tr.html" class="btn-back">&larr; Projelere Geri Dön</a>
-                <h1>UniVerse Türkiye</h1>
+                <a href="tr.html#project-preview" class="btn-back">&larr; Projelere Dön</a>
+                <h1>UniVerse Turkiye</h1>
                 <p class="section-subtitle project-subtitle">
-                    Türkiye'deki lise ve üniversite öğrencileri için tüm bilgileri merkezileştirmek ve karmaşık üniversite seçim sürecini basitleştirmek için tasarlanmış kapsamlı bir dijital platform.
+                    Türkiye'deki lise ve üniversite öğrencileri için tüm bilgileri merkezileştiren, karmaşık üniversite seçim sürecini basitleştiren kapsamlı bir dijital platform.
                 </p>
             </section>
             
-            <img src="images/proje-1.jpg" alt="Proje 1 ana görseli" class="project-detail-main-image">
+            <img src="images/proje-1.jpg" alt="Project 1 main image" class="project-detail-main-image">
             
             <section class="project-detail-content">
                 <div class="project-detail-grid">
                     <div class="project-detail-text">
                         <h2>Zorluk</h2>
-                        <p>Şu anda, Türkiye'deki lise ve üniversite öğrencileri düzinelerce dağınık kaynaktan (üniversite web siteleri, devlet portalları ve özel danışmanlık merkezleri) bilgi toplamak zorundadır. Bu süreç genellikle bunaltıcı, verimsiz ve hayati bilgilere erişimde eşitsizlik yaratmaktadır.</p>
+                        <p>Şu anda, Türkiye'deki lise ve üniversite öğrencileri bilgiyi onlarca parçalı kaynaktan toplamak zorunda—üniversite web siteleri, devlet portalları ve özel rehberlik merkezleri. Bu süreç genellikle bunaltıcı, verimsiz ve hayati bilgilere erişimde eşitsizlik yaratıyor.</p>
                         
                         <h2>Çözümüm</h2>
-                        <p>Bu platform, Türkiye'deki yükseköğretimle ilgili her şey için tek bir doğruluk kaynağı olarak hizmet verecektir. İki temel direk üzerine inşa edilmesi planlanmaktadır:</p>
+                        <p>Bu platform, Türkiye'deki yükseköğretimle ilgili her şey için tek gerçek kaynağı olarak hizmet edecek. İki temel sütun üzerine kurulması planlanıyor:</p>
                         
                         <h3>1. Kapsamlı Bilgi Merkezi</h3>
-                        <p>Türkiye'deki her üniversite hakkında kabul koşulları, program müfredatları, kampüs hayatı ve burs olanakları dahil olmak üzere ayrıntılı, güncel bilgiler içeren dinamik bir veritabanı.</p>
+                        <p>Türkiye'deki her üniversite hakkında detaylı, güncel bilgiler içeren dinamik bir veritabanı; başvuru gereksinimleri, program müfredatları, kampüs yaşamı ve burs fırsatları dahil.</p>
                         
                         <h3>2. Entegre Rehberlik ve Danışmanlık</h3>
-                        <p>Ulusal üniversite giriş sınavları (YKS) ve diğer akademik zorluklar için stratejik tavsiyeler, çalışma planları ve destek sağlamaya adanmış uzman odaklı bir danışmanlık hizmeti.</p>
+                        <p>Ulusal üniversite giriş sınavları (YKS) ve diğer akademik zorluklar için stratejik tavsiye, çalışma planları ve destek sağlamaya adanmış uzman rehberlik hizmeti.</p>
                     </div>
                     
                     <div class="project-detail-sidebar">
@@ -77,12 +89,13 @@
                             <h3>Proje Hedefleri</h3>
                             <ul class="tech-list">
                                 <li>JS mantığını göstermek</li>
-                                <li>Faydalı bir eğitim aracı oluşturmak</li>
+                                <li>Faydalı eğitim aracı oluşturmak</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
         </div>
     </main>
 

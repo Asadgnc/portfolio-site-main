@@ -13,32 +13,44 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="timeline.html">Timeline</a></li> 
-                    <li><a href="gallery.html" class="nav-active">Gallery</a></li> 
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
+        <header>
+        <div class="main-container header-content">
+            <a href="index.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <div class="nav-right">
-                    <ul class="lang-switcher">
-                        <li><a href="gallery.html" class="lang-active">EN</a></li>
-                        <li><a href="gallery-tr.html" class="lang-inactive">TR</a></li>
-                        <li><a href="gallery-ru.html" class="lang-inactive">RU</a></li>
-                        <li><a href="gallery-uz.html" class="lang-inactive">UZ</a></li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
-                </div>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="gallery-item-24.html" class="lang-active">EN</a></li>
+                <li><a href="gallery-item-24-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="gallery-item-24-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="gallery-item-24-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="gallery-item-24-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
         </div>
     </header>
 
-    <main class="page-content">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="gallery.html" class="nav-active">Gallery</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             
             <a href="gallery.html" class="btn-back" style="margin-top: 40px;">&larr; Back to Full Gallery</a>

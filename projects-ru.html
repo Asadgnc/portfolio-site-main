@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои Проекты - Асадбек Кенджаев</title>
+    <title>Мои проекты - Асадбек Кенжаев</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 
     <header>
         <div class="main-container header-content">
-            <a href="ru.html" class="logo">Асадбек Кенджаев</a>
+            <a href="ru.html" class="logo">Асадбек Кенжаев</a>
             <div class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -27,52 +27,69 @@
                 <li><a href="projects-tr.html" class="lang-inactive">TR</a></li>
                 <li><a href="projects-ru.html" class="lang-active">RU</a></li>
                 <li><a href="projects-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="projects-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
             </ul>
-            <a href="contact-ru.html" class="btn btn-primary nav-contact-btn">Контакты</a>
+            <a href="contact-ru.html" class="btn btn-primary nav-contact-btn">Контакт</a>
         </div>
     </header>
 
-    <main class="page-content">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-ru.html">Обо мне</a></li>
+                        <li><a href="timeline-ru.html">Хронология</a></li>
+                        <li><a href="gallery-ru.html">Галерея</a></li>
+                        <li><a href="projects-ru.html" class="nav-active">Проекты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             <section id="projects-full-page">
-                <h2>Мои Проекты</h2>
+                <h2>Мои проекты</h2>
                 <p class="section-subtitle" style="text-align: left;">
-                    Мои работы, демонстрирующие мои навыки и увлечения.
+                    Подборка моих работ, демонстрирующая мои навыки и страсть.
                 </p>
                 
                 <div class="project-grid">
                     <div class="project-card">
-                        <img src="images/proje-1.jpg" alt="Скриншот Проекта 1">
+                        <img src="images/proje-1.jpg" alt="Скриншот проекта 1" class="project-image">
                         <div class="project-content">
                             <h3>UniVerse Turkiye</h3>
-                            <p>Планируемая цифровая платформа для централизации информации о выборе университета и консультирования по экзаменам для студентов в Турции.</p>
-                            <a href="project-1-detail-ru.html" class="btn btn-secondary">Подробнее</a>
+                            <p>Планируемая цифровая платформа для централизации информации о выборе университета и консультировании по экзаменам для студентов в Турции.</p>
+                            <a href="project-1-detail-ru.html" class="btn btn-secondary">Посмотреть детали</a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="images/proje-2.jpg" alt="Скриншот Проекта 2">
+                        <img src="images/proje-2.jpg" alt="Скриншот проекта 2" class="project-image">
                         <div class="project-content">
-                            <h3>Веб-сайт Старшей Школы</h3>
-                            <p>Централизованный академический узел для моей школы (9-12 классы), предоставляющий учебные пособия и образцы экзаменационных вопросов.</p>
-                            <a href="project-2-detail-ru.html" class="btn btn-secondary">Подробнее</a>
+                            <h3>Веб-сайт средней школы</h3>
+                            <p>Централизованный академический центр для моей средней школы (9-12 классы), предоставляющий учебные пособия и примеры экзаменационных вопросов.</p>
+                            <a href="project-2-detail-ru.html" class="btn btn-secondary">Посмотреть детали</a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="images/proje-3.jpg" alt="Скриншот Проекта 3">
+                        <img src="images/proje-3.jpg" alt="Скриншот проекта 3" class="project-image">
                         <div class="project-content">
-                            <h3>Базовая Модель ИИ (Инициатива TR-LLM)</h3>
-                            <p>Текущий R&D проект по созданию первой в Турции суверенной большой языковой модели профессионального уровня.</p>
-                            <a href="project-3-detail-ru.html" class="btn btn-secondary">Подробнее</a>
+                            <h3>Базовая модель AI (Инициатива TR-LLM)</h3>
+                            <p>Текущий проект по разработке профессиональной суверенной большой языковой модели для Турции.</p>
+                            <a href="project-3-detail-ru.html" class="btn btn-secondary">Посмотреть детали</a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Асадбек Кенджаев. Все права защищены.</p>
+            <p>&copy; 2025 Асадбек Кенжаев. Все права защищены.</p>
         </div>
     </footer>
 </body>

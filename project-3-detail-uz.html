@@ -12,33 +12,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="main-container header-content">
+            <a href="uz.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-        <header>
-        <div class="container">
-            <nav>
-                <a href="uz.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about-uz.html">Men haqimda</a></li>
-                    <li><a href="timeline-uz.html">Vaqt chizig'i</a></li> 
-                    <li><a href="gallery-uz.html">Galereya</a></li> 
-                    <li><a href="projects-uz.html" class="nav-active">Loyihalar</a></li>
-                </ul>
-
-                <div class="nav-right">
-                    <ul class="lang-switcher">
-                        <li><a href="project-3-detail.html" class="lang-inactive">EN</a></li>
-                        <li><a href="project-3-detail-tr.html" class="lang-inactive">TR</a></li>
-                        <li><a href="project-3-detail-ru.html" class="lang-inactive">RU</a></li>
-                        <li><a href="project-3-detail-uz.html" class="lang-active">UZ</a></li>
-                    </ul>
-                    <a href="contact-uz.html" class="btn btn-primary nav-contact-btn">Aloqa</a>
-                </div>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="project-3-detail.html" class="lang-inactive">EN</a></li>
+                <li><a href="project-3-detail-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="project-3-detail-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="project-3-detail-uz.html" class="lang-active">UZ</a></li>
+                <li><a href="project-3-detail-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact-uz.html" class="btn btn-primary nav-contact-btn">Aloqa</a>
         </div>
     </header>
 
-    <main class="project-detail-page">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-uz.html">Men haqimda</a></li>
+                        <li><a href="timeline-uz.html">Vaqt jadvali</a></li>
+                        <li><a href="gallery-uz.html">Galereya</a></li>
+                        <li><a href="projects-uz.html" class="nav-active">Loyihalar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             <section class="project-detail-header">
                 <a href="projects-uz.html" class="btn-back">&larr; Loyihalarga Qaytish</a>
@@ -116,11 +127,12 @@
                 </div>
             </section>
         </div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Asadbek Kenjaev. Barcha huquqlar himoyalangan.</p>
+            <p>&copy; 2025 Asadbek Kenjaev. All rights reserved.</p>
         </div>
     </footer>
 </body>

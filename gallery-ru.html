@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
         <div class="main-container header-content">
-            <a href="ru.html" class="logo">Асадбек Кенжаев</a>
+            <a href="ru.html" class="logo">Asadbek Kenjaev</a>
             <div class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -27,48 +29,204 @@
                 <li><a href="gallery-tr.html" class="lang-inactive">TR</a></li>
                 <li><a href="gallery-ru.html" class="lang-active">RU</a></li>
                 <li><a href="gallery-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="gallery-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
             </ul>
-            <a href="contact-ru.html" class="btn btn-primary nav-contact-btn">Контакты</a>
+            <a href="contact-ru.html" class="btn btn-primary nav-contact-btn">Контакт</a>
         </div>
     </header>
 
-    <main class="page-content">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-ru.html">Обо мне</a></li>
+                        <li><a href="timeline-ru.html">Хронология</a></li>
+                        <li><a href="gallery-ru.html" class="nav-active">Галерея</a></li>
+                        <li><a href="projects-ru.html">Проекты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
+        
+        <section class="gallery-hero">
+            <div class="container">
+                <h1>Моя школьная жизнь</h1>
+                <p>Коллекция воспоминаний, моментов и вех, которые сформировали меня.</p>
+            </div>
+        </section>
+
         <div class="container">
-            <section id="gallery" style="box-shadow: none; border-radius: 0; margin-bottom: 0; padding-top: 20px;">
-                <h2>Моя Цифровая Галерея 📸</h2>
-                <p class="section-subtitle" style="text-align: left;">Моменты, сертификаты и технические концепции, определяющие мой путь.</p>
+            <section id="gallery-full-page">
                 
-                <div class="gallery-group">
-                    <h3>Академические достижения и сертификаты 📜</h3>
-                    <p>Доказательства моего непрерывного обучения и стремления к освоению новых навыков.</p>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="images/gallery-1.jpg" alt="Сертификат 1">
-                            <div class="gallery-overlay">Сертификат курса Python OOP</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/gallery-2.jpg" alt="Академическая награда">
-                            <div class="gallery-overlay">Церемония вручения аттестата с отличием</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/gallery-3.jpg" alt="Техническая концепция">
-                            <div class="gallery-overlay">Диаграмма алгоритма хеширования Блокчейна</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/gallery-4.jpg" alt="Скриншот кода">
-                            <div class="gallery-overlay">Мои первые 1000 строк кода на JavaScript!</div>
-                        </div>
-                    </div>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">Все годы</button>
+                    <button class="filter-btn" data-filter="2019">2019</button>
+                    <button class="filter-btn" data-filter="2020">2020</button>
+                    <button class="filter-btn" data-filter="2021">2021</button>
+                    <button class="filter-btn" data-filter="2022">2022</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2025">2025</button>
                 </div>
 
-                <div class="gallery-group">
-                    <h3>Мероприятия и Личностный Рост 💡</h3>
-                    <p>Основные моменты с хакатонов, семинаров и деятельности студенческого совета.</p>
-                    <div class="gallery-grid">
+                <div class="gallery-main-grid">
+                    
+                    <a href="gallery-item-2.html" class="gallery-card" data-year="2021">
+                        <div class="card-image"><img src="images/item2-main-1.jpg" alt="Награда лучшего ученика 10-го класса"><span class="card-tag">Достижения</span></div>
+                        <div class="card-content"><h3 class="card-title">Лучший ученик 10-го класса</h3><p class="card-description">Снимок с церемонии награждения 10-го класса, отмечающий огромное личное достижение.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Июнь 2021</span><span><i class="fas fa-map-marker-alt"></i> Школьный зал</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-3.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item3-main-1.jpg" alt="Национальный саммит студентов"><span class="card-tag">Лидерство</span></div>
+                        <div class="card-content"><h3 class="card-title">Национальный саммит студентов</h3><p class="card-description">Представление моей школы в качестве президента на 3-дневном национальном саммите в Анкаре.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Май 2022</span><span><i class="fas fa-map-marker-alt"></i> Кызылджахамам, Анкара</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-4.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item4-main-1.jpg" alt="Президент литературного клуба"><span class="card-tag">Лидерство</span></div>
+                        <div class="card-content"><h3 class="card-title">Президент литературного клуба</h3><p class="card-description">Организация дебатов, симпозиумов и библиотечных мероприятий в качестве президента клуба в 11 классе.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022-2023</span><span><i class="fas fa-map-marker-alt"></i> Школьная библиотека и зал</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-5.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item5-main-1.jpg" alt="Поездка в Чанаккале"><span class="card-tag">События</span></div>
+                        <div class="card-content"><h3 class="card-title">Поездка в Чанаккале</h3><p class="card-description">Глубоко трогательное путешествие на исторические поля сражений Чанаккале, поездка, изменившая мою перспективу.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Весна 2023</span><span><i class="fas fa-map-marker-alt"></i> Чанаккале, Турция</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-6-ru.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item6-main-1.jpg" alt="Технофест 2023"><span class="card-tag">Технологии</span></div>
+                        <div class="card-content"><h3 class="card-title">Технофест 2023</h3><p class="card-description">Организация школьной поездки на крупнейший технологический фестиваль Турции в Стамбуле. Вдохновляющий взгляд в будущее.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Апрель 2023</span><span><i class="fas fa-map-marker-alt"></i> Стамбул, Турция</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-7-ru.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item7-main-1.jpg" alt="Поездка на художественную выставку"><span class="card-tag">Искусство и мероприятия</span></div>
+                        <div class="card-content"><h3 class="card-title">Поездка на художественную выставку</h3><p class="card-description">Организация поездки на муниципальную художественную и портретную выставку, чтобы вдохновить одноклассников любовью к искусству.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Весна 2023</span><span><i class="fas fa-map-marker-alt"></i> Городская художественная галерея</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-8-ru.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item8-main-1.jpg" alt="Поездка в мечеть Чамлыджа"><span class="card-tag">Культура и мероприятия</span></div>
+                        <div class="card-content"><h3 class="card-title">Посещение мечети Чамлыджа</h3><p class="card-description">Организация школьной поездки в крупнейшую мечеть Европы, центр искусства, культуры и истории.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Весна 2023</span><span><i class="fas fa-map-marker-alt"></i> Стамбул, Турция</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-9-ru.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item9-main-1.jpg" alt="Исторические беседы с Мустафой Армаганом"><span class="card-tag">История и обучение</span></div>
+                        <div class="card-content"><h3 class="card-title">Исторические беседы с Мустафой Армаганом</h3><p class="card-description">Посещение эксклюзивной 6-недельной серии исторических бесед с выдающимся историком Мустафой Армаганом.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022 (вечера пятницы)</span><span><i class="fas fa-map-marker-alt"></i> Муниципальный зал и частная библиотека</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-10-ru.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item10-main-1.jpg" alt="Лучший ученик 12 класса 1-й семестр"><span class="card-tag">Достижения</span></div>
+                        <div class="card-content"><h3 class="card-title">Лучший ученик 12 класса 1-й семестр</h3><p class="card-description">Завоевание первого места в первом семестре 12 класса со средним баллом 97, совмещая все остальные обязанности.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Январь 2024</span><span><i class="fas fa-map-marker-alt"></i> Средняя школа</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-11-ru.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item11-main-1.jpg" alt="Лучший ученик 12 класса последний семестр"><span class="card-tag">Достижения</span></div>
+                        <div class="card-content"><h3 class="card-title">Лучший ученик 12 класса последний семестр</h3><p class="card-description">Окончил школу с 98 баллами, самым высоким результатом за всю мою школьную карьеру. Доказательство непрерывного упорного труда.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Июнь 2024</span><span><i class="fas fa-map-marker-alt"></i> Средняя школа</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-12-ru.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item12-main-1.jpg" alt="Ученик месяца"><span class="card-tag">Достижения</span></div>
+                        <div class="card-content"><h3 class="card-title">Ученик месяца (Октябрь)</h3><p class="card-description">Выбран "Учеником месяца" за примерное поведение и активное участие в школьных мероприятиях.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Октябрь 2022</span><span><i class="fas fa-map-marker-alt"></i> Средняя школа</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-13-ru.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item13-main-1.jpg" alt="Мемориальная пьеса о Мехмете Акифе"><span class="card-tag">Искусство и лидерство</span></div>
+                        <div class="card-content"><h3 class="card-title">Мемориальная пьеса о Мехмете Акифе</h3><p class="card-description">Совместная организация и выступление в 3-месячной театральной постановке для школы и района.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Осень 2022</span><span><i class="fas fa-map-marker-alt"></i> Школьная и районная сцена</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-14-ru.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item14-main-1.jpg" alt="Празднование Дня Республики"><span class="card-tag">Мероприятия и лидерство</span></div>
+                        <div class="card-content"><h3 class="card-title">Празднование Дня Республики</h3><p class="card-description">Организация и выступление в 10-дневном праздновании 99-й годовщины Турецкой Республики в нашей школе.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Октябрь 2022</span><span><i class="fas fa-map-marker-alt"></i> Средняя школа</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-15-ru.html" class="gallery-card" data-year="2021">
+                        <div class="card-image"><img src="images/item15-main-1.jpg" alt="Межконфессиональный видеопроект"><span class="card-tag">Культура и мероприятия</span></div>
+                        <div class="card-content"><h3 class="card-title">Межконфессиональный видеопроект</h3><p class="card-description">Создание видео для школьного культурного мероприятия с одним предложением на многих языках.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022 (11 класс)</span><span><i class="fas fa-map-marker-alt"></i> Средняя школа</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-16.html" class="gallery-card" data-year="2021">
+                        <div class="card-image"><img src="images/item16-main-1.jpg" alt="Nasheed Performance"><span class="card-tag">Arts & Performance</span></div>
+                        <div class="card-content"><h3 class="card-title">Nasheed Performance</h3><p class="card-description">A one-month preparation with two friends for a 10th-grade cultural event to perform traditional nasheeds.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2021 (10th Grade)</span><span><i class="fas fa-map-marker-alt"></i> High School</span></div></div>
+                    </a>
+
+                    <a href="gallery-item-17.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item17-main-1.jpg" alt="Quran Recitation Competition"><span class="card-tag">Achievements</span></div>
+                        <div class="card-content"><h3 class="card-title">Quran Recitation Competition</h3><p class="card-description">Winning 1st place in my school and competing at the district level, a proud moment for me and my father.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022 (11th Grade)</span><span><i class="fas fa-map-marker-alt"></i> School & District</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-18.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item18-main-1.jpg" alt="Return to Çanakkale"><span class="card-tag">Events & History</span></div>
+                        <div class="card-content"><h3 class="card-title">Return to Çanakkale</h3><p class="card-description">My second trip to Gallipoli, this time as a 12th grader, where I helped organize the visit and discovered new, deeper layers of history.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Spring 2024</span><span><i class="fas fa-map-marker-alt"></i> Çanakkale, Turkey</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-19.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item19-main-1.jpg" alt="TÜGVA Dignitary Dinner"><span class="card-tag">Culture & Performance</span></div>
+                        <div class="card-content"><h3 class="card-title">TÜGVA Dignitary Dinner</h3><p class="card-description">Performing a Quran recitation on a grand stage for state and political leaders at a TÜGVA dinner event.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> March 2023</span><span><i class="fas fa-map-marker-alt"></i> Ümraniye, Istanbul</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-20.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item20-main-1.jpg" alt="Leading Cuma Prayer"><span class="card-tag">Leadership & Community</span></div>
+                        <div class="card-content"><h3 class="card-title">Leading Cuma Prayer as Imam</h3><p class="card-description">A great honor to lead the Friday prayer and deliver the Khutbah for thousands at Sahra-i Kebir Mosque.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> May 2024</span><span><i class="fas fa-map-marker-alt"></i> Sahra-i Kebir Mosque</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-21.html" class="gallery-card" data-year="2022">
+                        <div class="card-image"><img src="images/item21-main-1.jpg" alt="School Iftar Recitation"><span class="card-tag">Culture & Performance</span></div>
+                        <div class="card-content"><h3 class="card-title">School Iftar Recitation</h3><p class="card-description">Reciting Quran with my friend Mehmet Akif at the grand school Iftar dinner for parents and teachers.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> April 19, 2022</span><span><i class="fas fa-map-marker-alt"></i> High School</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-22.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item22-main-1.jpg" alt="Vakti Kuşanmak Project"><span class="card-tag">Learning & Culture</span></div>
+                        <div class="card-content"><h3 class="card-title">Vakti Kuşanmak Project</h3><p class="card-description">A deeply insightful evening of knowledge and conversation with speakers Hüseyin Arıcı and Hüseyin Hatipoğlu.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> January 11, 2023</span><span><i class="fas fa-map-marker-alt"></i> High School</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-23.html" class="gallery-card" data-year="2023">
+                        <div class="card-image"><img src="images/item23-main-1.jpg" alt="University Tours"><span class="card-tag">Academics & Leadership</span></div>
+                        <div class="card-content"><h3 class="card-title">University Tours</h3><p class="card-description">Organizing and joining vital university tours (Medipol, Aydın) for my class in our final year of high school.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2023-2024</span><span><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-24.html" class="gallery-card" data-year="all">
+                        <div class="card-image"><img src="images/item24-main-1.jpg" alt="Hobby: Billiards"><span class="card-tag">Hobby</span></div>
+                        <div class="card-content"><h3 class="card-title">Hobby: Billiards</h3><p class="card-description">A 4-year passion. More than a game, it's a fun exercise in geometry, calculation, and precision.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2020-2024</span><span><i class="fas fa-map-marker-alt"></i> Billiards Halls</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-25.html" class="gallery-card" data-year="all">
+                        <div class="card-image"><img src="images/item25-main-1.jpg" alt="Hobby: Fitness & Discipline"><span class="card-tag">Hobby & Health</span></div>
+                        <div class="card-content"><h3 class="card-title">Hobby: Fitness & Discipline</h3><p class="card-description">More than a hobby, fitness is a responsibility that taught me discipline, improved my health, and boosted my motivation.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> Ongoing</span><span><i class="fas fa-map-marker-alt"></i> Gym</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-26.html" class="gallery-card" data-year="all">
+                        <div class="card-image"><img src="images/item26-main-1.jpg" alt="Hankando Turkish Martial Art"><span class="card-tag">Martial Arts</span></div>
+                        <div class="card-content"><h3 class="card-title">Hankando: Turkish Martial Art</h3><p class="card-description">My 2-year journey in Hankando, from being one of the first 5 students in Istanbul to becoming an assistant instructor.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2022-2024</span><span><i class="fas fa-map-marker-alt"></i> Hankando Academy</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-27.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item27-main-1.jpg" alt="Tanzimat Authors Project"><span class="card-tag">Academics & Literature</span></div>
+                        <div class="card-content"><h3 class="card-title">Tanzimat Authors Project</h3><p class="card-description">A year-long volunteer project visiting the homes and museums of Tanzimat authors, ending in a video project and a full score.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> 2023-2024 (12th Grade)</span><span><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-28.html" class="gallery-card" data-year="2024">
+                        <div class="card-image"><img src="images/item28-main-1.jpg" alt="High School Graduation"><span class="card-tag">Milestone</span></div>
+                        <div class="card-content"><h3 class="card-title">High School Graduation Day</h3><p class="card-description">The final day. Graduating as valedictorian with a 95.53 GPA, giving a speech, and seeing my family proud.</p><div class="card-meta"><span><i class="fas fa-calendar-alt"></i> June 2024</span><span><i class="fas fa-map-marker-alt"></i> High School</span></div></div>
+                    </a>
+                    
+                    <a href="gallery-item-29.html" class="gallery-card" data-year="2025">
+                        <div class="card-image">
+                            <img src="images/item29-main-1.jpg" alt="The SAT Grind">
+                            <span class="card-tag">Academics & Determination</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">The SAT Grind: 1400 in 3 Months</h3>
+                            <p class="card-description">The story of the 16-hour study days, endless library sessions, and the determination to pivot and succeed.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Summer 2025</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Municipal Library</span>
                             </div>
+                        </div>
+                    </a>
                 </div>
-
             </section>
+        </div>
         </div>
     </main>
 
@@ -77,5 +235,8 @@
             <p>&copy; 2025 Асадбек Кенжаев. Все права защищены.</p>
         </div>
     </footer>
+    
+    <script src="app.js"></script>
+
 </body>
 </html>

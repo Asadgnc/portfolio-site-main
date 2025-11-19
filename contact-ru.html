@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты - Асадбек Кенджаев</title>
+    <title>Контакты - Асадбек Кенжаев</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,38 +12,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <nav>
-                <a href="ru.html" class="logo">Асадбек Кенджаев</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about-ru.html">Обо мне</a></li>
-                    <li><a href="timeline-ru.html">Хронология</a></li> 
-                    <li><a href="gallery-ru.html">Галерея</a></li> 
-                    <li><a href="projects-ru.html">Проекты</a></li>
-                    <li><a href="contact-ru.html" class="nav-active">Контакты</a></li>
-                </ul>
+        <div class="main-container header-content">
+            <a href="ru.html" class="logo">Асадбек Кенжаев</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <ul class="lang-switcher">
-                    <li><a href="contact.html" class="lang-inactive">EN</a></li>
-                    <li><a href="contact-tr.html" class="lang-inactive">TR</a></li>
-                    <li><a href="contact-ru.html" class="lang-active">RU</a></li>
-                    <li><a href="contact-uz.html" class="lang-inactive">UZ</a></li>
-                </ul>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="contact.html" class="lang-inactive">EN</a></li>
+                <li><a href="contact-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="contact-ru.html" class="lang-active">RU</a></li>
+                <li><a href="contact-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="contact-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact-ru.html" class="btn btn-primary nav-contact-btn">Контакт</a>
         </div>
     </header>
 
-    <main class="page-content">
-        <div class="container">
-            <section id="contact-full-page">
-                <h2>Давайте Свяжемся</h2>
-                <p class="section-subtitle" style="text-align: left;">
-                    Найдите меня на этих платформах или отправьте мне электронное письмо.
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-ru.html">Обо мне</a></li>
+                        <li><a href="timeline-ru.html">Хронология</a></li>
+                        <li><a href="gallery-ru.html">Галерея</a></li>
+                        <li><a href="projects-ru.html">Проекты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
+        <div class="main-container">
+            <section id="contact-full-page" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 80px 24px;">
+                <h2>Свяжитесь со мной</h2>
+                <p class="section-subtitle" style="text-align: center;">
+                    Найдите меня на этих платформах или отправьте мне письмо.
                 </p>
-                <div class="social-icons">
+                <div class="social-icons" style="justify-content: center;">
                     <a href="https://linkedin.com/in/asadgnc" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -62,12 +75,17 @@
                 </div>
             </section>
         </div>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Асадбек Кенджаев. Все права защищены.</p>
+        <div class="main-container footer-content">
+            <a href="ru.html" class="logo">Асадбек Кенжаев</a>
+            <p>&copy; 2025 Асадбек Кенжаев. Все права защищены.</p>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

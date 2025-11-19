@@ -13,32 +13,44 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="timeline.html">Timeline</a></li> 
-                    <li><a href="gallery.html" class="nav-active">Gallery</a></li> 
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
+        <header>
+        <div class="main-container header-content">
+            <a href="index.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <div class="nav-right">
-                    <ul class="lang-switcher">
-                        <li><a href="gallery.html" class="lang-active">EN</a></li>
-                        <li><a href="gallery-tr.html" class="lang-inactive">TR</a></li>
-                        <li><a href="gallery-ru.html" class="lang-inactive">RU</a></li>
-                        <li><a href="gallery-uz.html" class="lang-inactive">UZ</a></li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
-                </div>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="gallery-item-8.html" class="lang-active">EN</a></li>
+                <li><a href="gallery-item-8-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="gallery-item-8-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="gallery-item-8-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="gallery-item-8-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
         </div>
     </header>
 
-    <main class="page-content">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="gallery.html" class="nav-active">Gallery</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             
             <a href="gallery.html" class="btn-back" style="margin-top: 40px;">&larr; Back to Full Gallery</a>
@@ -60,7 +72,7 @@
                         <span class="card-tag" style="position: static; display: inline-block; background-color: var(--border-light); color: var(--primary-hover); margin-bottom: 15px;">Culture & Events</span>
                         
                         <p>
-                            In the spring of my 11th-grade year, our municipality organized a public photo and portrait exhibition. As School President, I saw this as a perfect chance to bridge the gap between our students and the local art scene. I helped organize the logistics, and we took several classes on a trip to the gallery.
+                            In the spring of my 11th-grade year, as School President, I organized a trip to take our students to Çamlıca Mosque, the largest mosque in Europe. This wasn't just a religious site, but also a center of art, culture, and history.
                         </p>
                     </div>
 

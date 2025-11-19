@@ -12,84 +12,97 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <a href="tr.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="about-tr.html">Hakkımda</a></li>
-                    <li><a href="timeline-tr.html">Zaman Tüneli</a></li> 
-                    <li><a href="gallery-tr.html">Galeri</a></li> 
-                    <li><a href="projects-tr.html" class="nav-active">Projeler</a></li>
-                </ul>
+        <div class="main-container header-content">
+            <a href="tr.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <div class="nav-right">
-                    <ul class="lang-switcher">
-                        <li><a href="project-2-detail.html" class="lang-inactive">EN</a></li>
-                        <li><a href="project-2-detail-tr.html" class="lang-active">TR</a></li>
-                        <li><a href="project-2-detail-ru.html" class="lang-inactive">RU</a></li>
-                        <li><a href="project-2-detail-uz.html" class="lang-inactive">UZ</a></li>
-                    </ul>
-                    <a href="contact-tr.html" class="btn btn-primary nav-contact-btn">İletişim</a>
-                </div>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="project-2-detail.html" class="lang-inactive">EN</a></li>
+                <li><a href="project-2-detail-tr.html" class="lang-active">TR</a></li>
+                <li><a href="project-2-detail-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="project-2-detail-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="project-2-detail-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="contact-tr.html" class="btn btn-primary nav-contact-btn">İletişim</a>
         </div>
     </header>
 
-    <main class="project-detail-page">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-tr.html">Hakkımda</a></li>
+                        <li><a href="timeline-tr.html">Zaman Çizelgesi</a></li>
+                        <li><a href="gallery-tr.html">Galeri</a></li>
+                        <li><a href="projects-tr.html" class="nav-active">Projeler</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             <section class="project-detail-header">
-                <a href="projects-tr.html" class="btn-back">&larr; Projelere Geri Dön</a>
-                <h1>Lise Web Sitesi: Eşler Arası Akademik Destek Merkezi</h1>
+                <a href="tr.html#project-preview" class="btn-back">&larr; Projelere Dön</a>
+                <h1>Lise Web Sitesi: Akran-Akran Akademik Destek Merkezi</h1>
                 <p class="section-subtitle project-subtitle">
-                    "Lise Web Sitesi", öğrenci arkadaşlarıma yardım etme arzusundan doğan, web geliştirmeye yönelik en eski girişimlerimden birini temsil ediyor. Bir arkadaşımla lise yıllarımızın başında geliştirdiğimiz bu proje, ortak bir zorluğa doğrudan bir yanıttı: ders materyalleri için tek ve organize bir platformun olmaması.
+                    Bu proje, web geliştirmeye ilk adımlarımdan biriydi ve arkadaşlarıma yardım etme isteğinden doğdu. Bir arkadaşımla geliştirdiğimiz bu site, ortak bir soruna doğrudan yanıt oldu: ders materyalleri için tek ve düzenli bir platformun eksikliği.
                 </p>
             </section>
             
-            <img src="images/proje-2.jpg" alt="Proje 2 ana görseli" class="project-detail-main-image">
+            <img src="images/proje-2.jpg" alt="Project 2 main image" class="project-detail-main-image">
             
             <section class="project-detail-content">
                 <div class="project-detail-grid">
                     <div class="project-detail-text">
                         <h2>Zorluk</h2>
                         <p>
-                            Lise yıllarımın başında, sınıf arkadaşlarım ve ben ortak bir hayal kırıklığıyla karşı karşıyaydık: ders materyalleri, sınav bilgileri ve akademik kaynaklar tamamen dağınıktı. Öğrenciler örnek soruları ve ders notlarını bulmak için parçalanmış kaynakları aramak veya kulaktan dolma bilgilere güvenmek zorundaydı, bu da sınav hazırlığını verimsiz ve stresli hale getiriyordu. Akademik destek için tek ve güvenilir bir merkezimiz yoktu.
+                            Lise yıllarımın başlarında, sınıf arkadaşlarım ve ben ortak bir hayal kırıklığıyla karşılaştık: ders materyalleri, sınav bilgileri ve akademik kaynaklar tamamen dağınıktı. Öğrenciler, örnek soruları bulmak için parçalı kaynaklarda arama yapmak veya kulaktan kulağa dayanmak zorundaydı, bu da sınav hazırlığını verimsiz ve stresli hale getiriyordu. Akademik destek için tek ve güvenilir bir merkez eksikti.
                         </p>
                         
                         <h2>Çözümüm</h2>
-                        <p>Buna karşılık, bir arkadaşımla "Lise Web Sitesi"ni kurma girişimini üstlendik. Özellikle öğrenci arkadaşlarımız için tasarlanmış basit, merkezi bir web platformu geliştirdik. Site, aşağıdakileri düzenleyen ve sağlayan bir eşler arası kaynak merkezi olarak hizmet verdi:</p>
+                        <p>Buna yanıt olarak, bir arkadaşımla birlikte "Lise Web Sitesi"ni oluşturmaya karar verdik. Özellikle arkadaşlarımız için tasarlanmış basit, merkezileştirilmiş bir web platformu geliştirdik. Site, akrandan akrana bir kaynak merkezi olarak hizmet ederek şunları organize etti ve sağladı:</p>
                         
                         <ul>
-                            <li><strong>Özenle Seçilmiş Sınav Materyalleri:</strong> Tüm sınıflar (9-12) için yaklaşan sınavlara yönelik örnek soruları ve kilit konu başlıklarını topladık ve paylaştık.</li>
-                            <li><strong>Okul Analizleri ve Rehberler:</strong> Okulumuzun müfredatında ve akademik beklentilerinde yol almak için basit analizler ve tavsiyeler sunduk.</li>
+                            <li><strong>Düzenlenmiş Sınav Materyalleri:</strong> Tüm sınıflar (9-12) için yaklaşan sınavlara yönelik örnek soruları ve önemli konu ana hatlarını topladık ve paylaştık.</li>
+                            <li><strong>Okul Analizleri ve Rehberler:</strong> Okulumuzun müfredatını ve akademik beklentilerini anlamak için basit analizler ve tavsiyeler sunduk.</li>
                         </ul>
 
-                        <p>Platform, dağınık bir sistemi tek, erişilebilir bir merkeze başarıyla dönüştürerek öğrencilerin başarılı olmak için ihtiyaç duydukları yardımı bulmalarını kolaylaştırdı.</p>
+                        <p>Platform, dağınık bir sistemi tek, erişilebilir bir merkeze başarıyla dönüştürdü ve öğrencilerin başarılı olmak için ihtiyaç duydukları yardımı bulmalarını kolaylaştırdı.</p>
 
-                        <h3>Çıkardığım Ders</h3>
-                        <p>Günümüz standartlarına göre karmaşık bir sistem olmasa da, bu proje kritik bir ilk adımdı. Bana proje işbirliğinin, kullanıcı odaklı tasarımın ve inisiyatif almanın muazzam değerinin temellerini öğretti. Bir topluluk için gerçek dünya sorunlarını çözen pratik araçlar oluşturma ilgimi pekiştirdi.</p>
+                        <h3>Çıkardığım Dersler</h3>
+                        <p>Günümüz standartlarına göre karmaşık bir sistem olmasa da, bu proje kritik bir ilk adımdı. Bana proje işbirliği, kullanıcı odaklı tasarım ve inisiyatif almanın muazzam değerinin temellerini öğretti. Bir topluluk için gerçek dünya sorunlarını çözen pratik araçlar oluşturma ilgimi pekiştirdi.</p>
                     </div>
                     
                     <div class="project-detail-sidebar">
                         <div class="tech-box">
                             <h3>Kullanılan Teknolojiler</h3>
                             <ul class="tech-list">
-                                <li>HTML5 (Semantik)</li>
-                                <li>CSS3 (Flexbox, Grid, Animasyonlar)</li>
-                                <li>JavaScript (tsParticles kütüphanesi)</li>
-                                <li>Git & GitHub Pages (Sürüm Kontrolü ve Dağıtım)</li>
+                                <li>HTML5 (Semantic)</li>
+                                <li>CSS3 (Flexbox, Grid, Animations)</li>
+                                <li>JavaScript (tsParticles library)</li>
+                                <li>Git & GitHub Pages (Version Control & Deployment)</li>
                             </ul>
                         </div>
                         <div class="tech-box">
                             <h3>Proje Hedefleri</h3>
                             <ul class="tech-list">
                                 <li>Kodlama ve problem çözme becerilerimi kanıtlamak</li>
-                                <li>Git ve web sitesi dağıtımını öğrenmek</li>
+                                <li>Git ve web sitesi dağıtımı öğrenmek</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
         </div>
     </main>
 
