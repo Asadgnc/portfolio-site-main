@@ -1,170 +1,170 @@
 [
-  {
-    "id": 2,
-    "title": "10th Grade Valedictorian",
-    "image": "images/item2-main-1.jpg",
-    "page": "gallery-item-2.html"
-  },
-  {
-    "id": 3,
-    "title": "National Student Representative Summit",
-    "image": "images/item3-main-1.jpg",
-    "page": "gallery-item-3.html"
-  },
-  {
-    "id": 4,
-    "title": "Literature Club President",
-    "image": "images/item4-main-1.jpg",
-    "page": "gallery-item-4.html"
-  },
-  {
-    "id": 5,
-    "title": "The Çanakkale (Gallipoli) Trip",
-    "image": "images/item5-main-1.jpg",
-    "page": "gallery-item-5.html"
-  },
-  {
-    "id": 6,
-    "title": "Teknofest 2023",
-    "image": "images/item6-main-1.jpg",
-    "page": "gallery-item-6.html"
-  },
-  {
-    "id": 7,
-    "title": "Art Exhibition Trip",
-    "image": "images/item7-main-1.jpg",
-    "page": "gallery-item-7.html"
-  },
-  {
-    "id": 8,
-    "title": "A Trip to Çamlıca Mosque",
-    "image": "images/item8-main-1.jpg",
-    "page": "gallery-item-8.html"
-  },
-  {
-    "id": 9,
-    "title": "History Talks with Mustafa Armağan",
-    "image": "images/item9-main-1.jpg",
-    "page": "gallery-item-9.html"
-  },
-  {
-    "id": 10,
-    "title": "12th Grade 1st Semester Valedictorian",
-    "image": "images/item10-main-1.jpg",
-    "page": "gallery-item-10.html"
-  },
-  {
-    "id": 11,
-    "title": "12th Grade Final Valedictorian",
-    "image": "images/item11-main-1.jpg",
-    "page": "gallery-item-11.html"
-  },
-  {
-    "id": 12,
-    "title": "Student of the Month",
-    "image": "images/item12-main-1.jpg",
-    "page": "gallery-item-12.html"
-  },
-  {
-    "id": 13,
-    "title": "Mehmet Akif Memorial Play",
-    "image": "images/item13-main-1.jpg",
-    "page": "gallery-item-13.html"
-  },
-  {
-    "id": 14,
-    "title": "Republic Day Celebration",
-    "image": "images/item14-main-1.jpg",
-    "page": "gallery-item-14.html"
-  },
-  {
-    "id": 15,
-    "title": "Interfaith Video Project",
-    "image": "images/item15-main-1.jpg",
-    "page": "gallery-item-15.html"
-  },
-  {
-    "id": 16,
-    "title": "Nasheed Performance",
-    "image": "images/item16-main-1.jpg",
-    "page": "gallery-item-16.html"
-  },
-  {
-    "id": 17,
-    "title": "Quran Recitation Competition",
-    "image": "images/item17-main-1.jpg",
-    "page": "gallery-item-17.html"
-  },
-  {
-    "id": 18,
-    "title": "Return to Çanakkale",
-    "image": "images/item18-main-1.jpg",
-    "page": "gallery-item-18.html"
-  },
-  {
-    "id": 19,
-    "title": "Recitation at the TÜGVA Dinner",
-    "image": "images/item19-main-1.jpg",
-    "page": "gallery-item-19.html"
-  },
-  {
-    "id": 20,
-    "title": "Leading Cuma Prayer as Imam",
-    "image": "images/item20-main-1.jpg",
-    "page": "gallery-item-20.html"
-  },
-  {
-    "id": 21,
-    "title": "School Iftar Recitation",
-    "image": "images/item21-main-1.jpg",
-    "page": "gallery-item-21.html"
-  },
-  {
-    "id": 22,
-    "title": "Vakti Kuşanmak Project",
-    "image": "images/item22-main-1.jpg",
-    "page": "gallery-item-22.html"
-  },
-  {
-    "id": 23,
-    "title": "Organizing the University Tours",
-    "image": "images/item23-main-1.jpg",
-    "page": "gallery-item-23.html"
-  },
-  {
-    "id": 24,
-    "title": "My Hobby: Billiards",
-    "image": "images/item24-main-1.jpg",
-    "page": "gallery-item-24.html"
-  },
-  {
-    "id": 25,
-    "title": "Hobby: Fitness & Discipline",
-    "image": "images/item25-main-1.jpg",
-    "page": "gallery-item-25.html"
-  },
-  {
-    "id": 26,
-    "title": "Hankando: Turkish Martial Art",
-    "image": "images/item26-main-1.jpg",
-    "page": "gallery-item-26.html"
-  },
-  {
-    "id": 27,
-    "title": "Tanzimat Authors Project",
-    "image": "images/item27-main-1.jpg",
-    "page": "gallery-item-27.html"
-  },
-  {
-    "id": 28,
-    "title": "High School Graduation Day",
-    "image": "images/item28-main-1.jpg",
-    "page": "gallery-item-28.html"
-  },
-  {
-    "id": 29,
-    "title": "The SAT Grind: 1400 in 3 Months",
-    "image": "images/item29-main-1.jpg",
-    "page": "gallery-item-29.html"
-  }
+    {
+        "id":  2,
+        "title":  "10th Grade Valedictorian",
+        "image":  "images/item2-main-1.jpg",
+        "page":  "gallery-items/item-2/gallery-item-2.html"
+    },
+    {
+        "id":  3,
+        "title":  "National Student Representative Summit",
+        "image":  "images/item3-main-1.jpg",
+        "page":  "gallery-items/item-3/gallery-item-3.html"
+    },
+    {
+        "id":  4,
+        "title":  "Literature Club President",
+        "image":  "images/item4-main-1.jpg",
+        "page":  "gallery-items/item-4/gallery-item-4.html"
+    },
+    {
+        "id":  5,
+        "title":  "The Çanakkale (Gallipoli) Trip",
+        "image":  "images/item5-main-1.jpg",
+        "page":  "gallery-items/item-5/gallery-item-5.html"
+    },
+    {
+        "id":  6,
+        "title":  "Teknofest 2023",
+        "image":  "images/item6-main-1.jpg",
+        "page":  "gallery-items/item-6/gallery-item-6.html"
+    },
+    {
+        "id":  7,
+        "title":  "Art Exhibition Trip",
+        "image":  "images/item7-main-1.jpg",
+        "page":  "gallery-items/item-7/gallery-item-7.html"
+    },
+    {
+        "id":  8,
+        "title":  "A Trip to Çamlıca Mosque",
+        "image":  "images/item8-main-1.jpg",
+        "page":  "gallery-items/item-8/gallery-item-8.html"
+    },
+    {
+        "id":  9,
+        "title":  "History Talks with Mustafa Armağan",
+        "image":  "images/item9-main-1.jpg",
+        "page":  "gallery-items/item-9/gallery-item-9.html"
+    },
+    {
+        "id":  10,
+        "title":  "12th Grade 1st Semester Valedictorian",
+        "image":  "images/item10-main-1.jpg",
+        "page":  "gallery-items/item-10/gallery-item-10.html"
+    },
+    {
+        "id":  11,
+        "title":  "12th Grade Final Valedictorian",
+        "image":  "images/item11-main-1.jpg",
+        "page":  "gallery-items/item-11/gallery-item-11.html"
+    },
+    {
+        "id":  12,
+        "title":  "Student of the Month",
+        "image":  "images/item12-main-1.jpg",
+        "page":  "gallery-items/item-12/gallery-item-12.html"
+    },
+    {
+        "id":  13,
+        "title":  "Mehmet Akif Memorial Play",
+        "image":  "images/item13-main-1.jpg",
+        "page":  "gallery-items/item-13/gallery-item-13.html"
+    },
+    {
+        "id":  14,
+        "title":  "Republic Day Celebration",
+        "image":  "images/item14-main-1.jpg",
+        "page":  "gallery-items/item-14/gallery-item-14.html"
+    },
+    {
+        "id":  15,
+        "title":  "Interfaith Video Project",
+        "image":  "images/item15-main-1.jpg",
+        "page":  "gallery-items/item-15/gallery-item-15.html"
+    },
+    {
+        "id":  16,
+        "title":  "Nasheed Performance",
+        "image":  "images/item16-main-1.jpg",
+        "page":  "gallery-items/item-16/gallery-item-16.html"
+    },
+    {
+        "id":  17,
+        "title":  "Quran Recitation Competition",
+        "image":  "images/item17-main-1.jpg",
+        "page":  "gallery-items/item-17/gallery-item-17.html"
+    },
+    {
+        "id":  18,
+        "title":  "Return to Çanakkale",
+        "image":  "images/item18-main-1.jpg",
+        "page":  "gallery-items/item-18/gallery-item-18.html"
+    },
+    {
+        "id":  19,
+        "title":  "Recitation at the TÜGVA Dinner",
+        "image":  "images/item19-main-1.jpg",
+        "page":  "gallery-items/item-19/gallery-item-19.html"
+    },
+    {
+        "id":  20,
+        "title":  "Leading Cuma Prayer as Imam",
+        "image":  "images/item20-main-1.jpg",
+        "page":  "gallery-items/item-20/gallery-item-20.html"
+    },
+    {
+        "id":  21,
+        "title":  "School Iftar Recitation",
+        "image":  "images/item21-main-1.jpg",
+        "page":  "gallery-items/item-21/gallery-item-21.html"
+    },
+    {
+        "id":  22,
+        "title":  "Vakti Kuşanmak Project",
+        "image":  "images/item22-main-1.jpg",
+        "page":  "gallery-items/item-22/gallery-item-22.html"
+    },
+    {
+        "id":  23,
+        "title":  "Organizing the University Tours",
+        "image":  "images/item23-main-1.jpg",
+        "page":  "gallery-items/item-23/gallery-item-23.html"
+    },
+    {
+        "id":  24,
+        "title":  "My Hobby: Billiards",
+        "image":  "images/item24-main-1.jpg",
+        "page":  "gallery-items/item-24/gallery-item-24.html"
+    },
+    {
+        "id":  25,
+        "title":  "Hobby: Fitness \u0026 Discipline",
+        "image":  "images/item25-main-1.jpg",
+        "page":  "gallery-items/item-25/gallery-item-25.html"
+    },
+    {
+        "id":  26,
+        "title":  "Hankando: Turkish Martial Art",
+        "image":  "images/item26-main-1.jpg",
+        "page":  "gallery-items/item-26/gallery-item-26.html"
+    },
+    {
+        "id":  27,
+        "title":  "Tanzimat Authors Project",
+        "image":  "images/item27-main-1.jpg",
+        "page":  "gallery-items/item-27/gallery-item-27.html"
+    },
+    {
+        "id":  28,
+        "title":  "High School Graduation Day",
+        "image":  "images/item28-main-1.jpg",
+        "page":  "gallery-items/item-28/gallery-item-28.html"
+    },
+    {
+        "id":  29,
+        "title":  "The SAT Grind: 1400 in 3 Months",
+        "image":  "images/item29-main-1.jpg",
+        "page":  "gallery-items/item-29/gallery-item-29.html"
+    }
 ]

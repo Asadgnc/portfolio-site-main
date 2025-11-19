@@ -14,41 +14,53 @@
 <body>
 
     <header>
-        <div class="container">
-            <nav>
-                <a href="../../index.html" class="logo">Asadbek Kenjaev</a>
-                
-                <ul class="nav-links">
-                    <li><a href="../about/about.html">About Me</a></li>
-                    <li><a href="../timeline/timeline.html">Timeline</a></li> 
-                    <li><a href="../gallery/gallery.html">Gallery</a></li> 
-                    <li><a href="projects.html" class="nav-active">Projects</a></li>
-                </ul>
+        <div class="main-container header-content">
+            <a href="../../index.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
 
-                <div class="nav-right">
-                    <ul class="lang-switcher">
-                        <li><a href="project-3-detail.html" class="lang-active">EN</a></li>
-                        <li><a href="project-3-detail-tr.html" class="lang-inactive">TR</a></li>
-                        <li><a href="project-3-detail-ru.html" class="lang-inactive">RU</a></li>
-                        <li><a href="project-3-detail-uz.html" class="lang-inactive">UZ</a></li>
-                    </ul>
-                    <a href="../contact/contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
-                </div>
-            </nav>
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="project-3-detail.html" class="lang-active">EN</a></li>
+                <li><a href="project-3-detail-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="project-3-detail-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="project-3-detail-uz.html" class="lang-inactive">UZ</a></li>
+                <li><a href="project-3-detail-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="../contact/contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
         </div>
     </header>
 
-    <main class="project-detail-page">
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="../about/about.html">About Me</a></li>
+                        <li><a href="../timeline/timeline.html">Timeline</a></li>
+                        <li><a href="../gallery/gallery.html">Gallery</a></li>
+                        <li><a href="projects.html" class="nav-active">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
         <div class="container">
             <section class="project-detail-header">
-                <a href="index.html#project-preview" class="btn-back">&larr; Back to Projects</a>
+                <a href="projects.html" class="btn-back">&larr; Back to Projects</a>
                 <h1>R&D: The TR-LLM Initiative</h1>
                 <p class="section-subtitle project-subtitle">
                     An ambitious R&D venture to build Turkey's first sovereign, professional-grade large language model. This ongoing project aims to address critical gaps in data sovereignty and the linguistic/cultural nuance that global models miss.
                 </p>
             </section>
             
-            <img src="images/proje-3.jpg" alt="Project 3 main image" class="project-detail-main-image">
+            <img src="../../images/proje-3.jpg" alt="Project 3 main image" class="project-detail-main-image">
             
             <section class="project-detail-content">
                 <div class="project-detail-grid">

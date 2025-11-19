@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     async function buildGalleryData(count = 28) {
         // Use filenames named item2-main-1 ... item29-main-1 (in images/)
-        const json = await fetchJsonIfExists('gallery/data.json');
+        const json = await fetchJsonIfExists('pages/gallery/data.json');
         if (json && Array.isArray(json) && json.length) {
             return json.slice(0, count).map((it, i) => {
                 const idx = i + 2; // map 0->2, 1->3, ... , 27->29
@@ -120,14 +120,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     id: it.id ?? idx,
                     title: it.title ?? (`Gallery Item ${idx}`),
                     image: it.image ?? (`images/item${idx}-main-1.jpg`),
-                    page: it.page ?? (`gallery-item-${idx}.html`)
+                    page: it.page ?? (`gallery-items/item-${idx}/gallery-item-${idx}.html`)
                 };
             });
         }
 
         const promises = [];
         for (let i = 2; i <= 29; i++) {
-            const page = `gallery-item-${i}.html`;
+            const page = `gallery-items/item-${i}/gallery-item-${i}.html`;
             promises.push(
                 fetchPageTitle(page).then(title => ({
                     id: i,
