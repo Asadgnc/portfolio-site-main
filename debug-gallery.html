@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Gallery</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #000; color: #fff; }
+        #log { background: #111; padding: 10px; margin: 10px 0; border: 1px solid #333; }
+        .project-card { border: 2px solid lime; margin: 10px; padding: 10px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1>Gallery Debug Test</h1>
+    <div id="log"></div>
+    <div id="projects-preview-grid"></div>
+    
+    <script>
+        const log = (msg) => {
+            console.log(msg);
+            document.getElementById('log').innerHTML += msg + '<br>';
+        };
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            log('[1] DOM loaded');
+            
+            // Detect language
+            const htmlLang = document.documentElement.lang;
+            log('[2] HTML lang: ' + htmlLang);
+            
+            const pageLang = htmlLang && htmlLang !== 'en' ? (htmlLang === 'uz-Cyrl' ? 'uz-cyrl' : htmlLang) : 'en';
+            const langSuffix = pageLang === 'en' ? '' : `-${pageLang}`;
+            log('[3] Page lang: ' + pageLang + ', suffix: ' + langSuffix);
+            
+            // Build data
+            const items = [];
+            for (let i = 2; i <= 5; i++) {
+                items.push({
+                    id: i,
+                    title: `Gallery Item ${i}`,
+                    image: `images/item${i}-main-1.jpg`,
+                    page: `gallery-items/item-${i}/gallery-item-${i}${langSuffix}.html`
+                });
+            }
+            log('[4] Created ' + items.length + ' items');
+            
+            // Render
+            const container = document.getElementById('projects-preview-grid');
+            if (!container) {
+                log('[5] ERROR: Container not found!');
+                return;
+            }
+            log('[5] Container found');
+            
+            container.innerHTML = '';
+            items.forEach(item => {
+                const a = document.createElement('a');
+                a.className = 'project-card';
+                a.href = item.page;
+                a.textContent = item.title + ' -> ' + item.page;
+                container.appendChild(a);
+            });
+            log('[6] Rendered ' + items.length + ' cards');
+        });
+    </script>
+</body>
+</html>

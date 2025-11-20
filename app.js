@@ -1,6 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     /* -------------------------
+       DİL ALGILAMA - Sayfanın hangi dilde olduğunu tespit et
+       ------------------------- */
+    function detectPageLanguage() {
+        const htmlLang = document.documentElement.lang;
+        const pathname = window.location.pathname;
+        
+        // HTML lang attribute kontrolü
+        if (htmlLang && htmlLang !== 'en') {
+            return htmlLang === 'uz-Cyrl' ? 'uz-cyrl' : htmlLang;
+        }
+        
+        // URL'den dil tespiti (tr.html, ru.html, uz.html, uz-cyrl.html)
+        if (pathname.includes('/tr.html') || pathname.includes('-tr.html')) return 'tr';
+        if (pathname.includes('/ru.html') || pathname.includes('-ru.html')) return 'ru';
+        if (pathname.includes('/uz-cyrl.html') || pathname.includes('-uz-cyrl.html')) return 'uz-cyrl';
+        if (pathname.includes('/uz.html') || pathname.includes('-uz.html')) return 'uz';
+        
+        return 'en'; // default English
+    }
+
+    const pageLang = detectPageLanguage();
+    const langSuffix = pageLang === 'en' ? '' : `-${pageLang}`;
+
+    /* -------------------------
        Lenis smooth scroll (daha yumuşak/örnek siteye yakın)
        ------------------------- */
     const lenis = new Lenis({
@@ -111,39 +135,40 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     async function buildGalleryData(count = 28) {
-        // Use filenames named item2-main-1 ... item29-main-1 (in images/)
-        const json = await fetchJsonIfExists('pages/gallery/data.json');
-        if (json && Array.isArray(json) && json.length) {
-            return json.slice(0, count).map((it, i) => {
-                const idx = i + 2; // map 0->2, 1->3, ... , 27->29
-                return {
-                    id: it.id ?? idx,
-                    title: it.title ?? (`Gallery Item ${idx}`),
-                    image: it.image ?? (`images/item${idx}-main-1.jpg`),
-                    page: it.page ?? (`gallery-items/item-${idx}/gallery-item-${idx}.html`)
-                };
+        // ALWAYS build from scratch to support language-specific pages
+        // data.json is only for English, so we ignore it for multi-language support
+        console.log('[Gallery] Building gallery data for language:', pageLang);
+        
+        const galleryItems = [];
+        for (let i = 2; i <= 29; i++) {
+            const page = `gallery-items/item-${i}/gallery-item-${i}${langSuffix}.html`;
+            galleryItems.push({
+                id: i,
+                title: `Gallery Item ${i}`, // Will be replaced by actual title if fetch succeeds
+                image: `images/item${i}-main-1.jpg`,
+                page
             });
         }
 
-        const promises = [];
-        for (let i = 2; i <= 29; i++) {
-            const page = `gallery-items/item-${i}/gallery-item-${i}.html`;
-            promises.push(
-                fetchPageTitle(page).then(title => ({
-                    id: i,
-                    title: title || `Gallery Item ${i}`,
-                    image: `images/item${i}-main-1.jpg`,
-                    page
-                }))
-            );
-        }
-
-        return Promise.all(promises);
+        console.log('[Gallery] Created', galleryItems.length, 'items with suffix:', langSuffix);
+        return galleryItems.slice(0, count);
     }
 
     function renderGalleryPreview(galleryData) {
         const container = document.getElementById('projects-preview-grid');
-        if (!container) return;
+        if (!container) {
+            console.warn('[Gallery] Container #projects-preview-grid not found on this page');
+            return;
+        }
+        
+        // Check if container already has static cards (either project-card or gallery-card)
+        const existingCards = container.querySelectorAll('.project-card, .gallery-card');
+        if (existingCards.length > 0) {
+            console.log('[Gallery] Container already has', existingCards.length, 'static cards - skipping JS render');
+            return;
+        }
+        
+        console.log('[Gallery] Rendering', galleryData.length, 'items to container');
         container.innerHTML = '';
 
         galleryData.forEach(item => {
@@ -183,8 +208,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // build ve render
     (async () => {
-        const galleryDataResolved = await buildGalleryData(28);
-        renderGalleryPreview(galleryDataResolved);
+        try {
+            console.log('[Gallery] Starting gallery build, page lang:', pageLang, 'suffix:', langSuffix);
+            const galleryDataResolved = await buildGalleryData(28);
+            console.log('[Gallery] Gallery data resolved:', galleryDataResolved.length, 'items');
+            renderGalleryPreview(galleryDataResolved);
+            console.log('[Gallery] Render complete');
+        } catch (error) {
+            console.error('[Gallery] Error building/rendering gallery:', error);
+        }
     })();
 
 });

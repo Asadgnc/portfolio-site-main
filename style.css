@@ -609,7 +609,7 @@ header {
 /* Projects preview grid (ana sayfada tüm 28 kart) */
 .projects-preview-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
     align-items: stretch;
     margin-top: 20px;
@@ -629,18 +629,47 @@ header {
     display: flex;
     flex-direction: column;
 }
-.projects-preview-grid .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-medium); }
+
+.projects-preview-grid .gallery-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow-subtle);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    height: auto;
+    min-height: 420px;
+}
+
+.projects-preview-grid .project-card:hover,
+.projects-preview-grid .gallery-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-medium); }
 
 /* görsel alanı */
-.projects-preview-grid .project-image {
-    height: 220px;
+.projects-preview-grid .project-image,
+.projects-preview-grid .card-image {
+    height: 240px;
     background-color: #0e0e0e;
     overflow: hidden;
     display: block;
+    position: relative;
+}
+
+.projects-preview-grid .card-image img,
+.projects-preview-grid .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 /* Görseli <img> ile gösterme: object-fit kullan */
-.projects-preview-grid .project-image img {
+.projects-preview-grid .project-image img,
+.projects-preview-grid .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -649,7 +678,8 @@ header {
     transition: transform 0.4s ease;
 }
 
-.projects-preview-grid .project-card:hover .project-image img {
+.projects-preview-grid .project-card:hover .project-image img,
+.projects-preview-grid .gallery-card:hover .card-image img {
     transform: scale(1.03);
 }
 
@@ -659,24 +689,74 @@ header {
     flex: 1;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .projects-preview-grid .project-content h3 {
     font-size: 1.05rem;
     color: var(--text-light);
-    margin: 0;
+    margin: 0 0 8px 0;
+}
+
+/* Gallery card specific styles for homepage */
+.projects-preview-grid .gallery-card .card-content {
+    padding: 14px;
+}
+.projects-preview-grid .card-title {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+.projects-preview-grid .card-description {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.4;
+}
+.projects-preview-grid .card-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects-preview-grid .card-meta i {
+    margin-right: 4px;
+}
+.projects-preview-grid .card-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 10;
+    pointer-events: none;
+}
+.projects-preview-grid .card-image {
+    position: relative;
 }
 
 /* responsive: dar ekranlarda 1-2 sütun */
 @media (max-width: 1100px) {
-    .projects-preview-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .projects-preview-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 680px) {
     .projects-preview-grid { grid-template-columns: 1fr; gap: 16px; }
-    .projects-preview-grid .project-card { height: auto; }
+    .projects-preview-grid .project-card,
+    .projects-preview-grid .gallery-card { height: auto; }
 }
 
 /* Görsel kartlar için placeholder arka plan rengi (yüklenmemiş resimlerde hoş görünür) */
-.projects-preview-grid .project-image { background-color: #0e0e0e; border-bottom: 1px solid rgba(255,255,255,0.02); }
+.projects-preview-grid .project-image,
+.projects-preview-grid .card-image { background-color: #0e0e0e; border-bottom: 1px solid rgba(255,255,255,0.02); }
 
 /* small tweak: projects section üstünde preview gözüksün ama "My Projects" bölümünü koru */
 #projects { margin-top: 40px; }

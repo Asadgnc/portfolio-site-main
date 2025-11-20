@@ -1,0 +1,113 @@
+﻿
+                    <a href="gallery-items/item-2/gallery-item-2-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item2-main-1.jpg" alt="10. Sınıf Birincisi" loading="lazy"></div>
+                        <div class="project-content"><h3>10. Sınıf Birincisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-3/gallery-item-3-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item3-main-1.jpg" alt="Ulusal Öğrenci Temsilcileri Zirvesi" loading="lazy"></div>
+                        <div class="project-content"><h3>Ulusal Öğrenci Temsilcileri Zirvesi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-4/gallery-item-4-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item4-main-1.jpg" alt="Edebiyat Kulübü Başkanı" loading="lazy"></div>
+                        <div class="project-content"><h3>Edebiyat Kulübü Başkanı</h3></div>
+                    </a>
+                    <a href="gallery-items/item-5/gallery-item-5-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item5-main-1.jpg" alt="Çanakkale Gezisi" loading="lazy"></div>
+                        <div class="project-content"><h3>Çanakkale Gezisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-6/gallery-item-6-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item6-main-1.jpg" alt="Teknofest 2023" loading="lazy"></div>
+                        <div class="project-content"><h3>Teknofest 2023</h3></div>
+                    </a>
+                    <a href="gallery-items/item-7/gallery-item-7-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item7-main-1.jpg" alt="11. Sınıf Birincisi" loading="lazy"></div>
+                        <div class="project-content"><h3>11. Sınıf Birincisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-8/gallery-item-8-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item8-main-1.jpg" alt="İstanbul Okul Başkanı" loading="lazy"></div>
+                        <div class="project-content"><h3>İstanbul Okul Başkanı</h3></div>
+                    </a>
+                    <a href="gallery-items/item-9/gallery-item-9-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item9-main-1.jpg" alt="Ankara Okul Başkanları Zirvesi" loading="lazy"></div>
+                        <div class="project-content"><h3>Ankara Okul Başkanları Zirvesi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-10/gallery-item-10-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item10-main-1.jpg" alt="12. Sınıf 1. Dönem Birincisi" loading="lazy"></div>
+                        <div class="project-content"><h3>12. Sınıf 1. Dönem Birincisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-11/gallery-item-11-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item11-main-1.jpg" alt="11. Sınıf 2. Dönem Birincisi" loading="lazy"></div>
+                        <div class="project-content"><h3>11. Sınıf 2. Dönem Birincisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-12/gallery-item-12-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item12-main-1.jpg" alt="Türkiye Geneli Lise Zirvesi" loading="lazy"></div>
+                        <div class="project-content"><h3>Türkiye Geneli Lise Zirvesi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-13/gallery-item-13-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item13-main-1.jpg" alt="Turnuva Şampiyonu" loading="lazy"></div>
+                        <div class="project-content"><h3>Turnuva Şampiyonu</h3></div>
+                    </a>
+                    <a href="gallery-items/item-14/gallery-item-14-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item14-main-1.jpg" alt="SAT Maratonu" loading="lazy"></div>
+                        <div class="project-content"><h3>SAT Maratonu</h3></div>
+                    </a>
+                    <a href="gallery-items/item-15/gallery-item-15-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item15-main-1.jpg" alt="Web Geliştirme Workshopu" loading="lazy"></div>
+                        <div class="project-content"><h3>Web Geliştirme Workshopu</h3></div>
+                    </a>
+                    <a href="gallery-items/item-16/gallery-item-16-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item16-main-1.jpg" alt="Matematik Olimpiyatları" loading="lazy"></div>
+                        <div class="project-content"><h3>Matematik Olimpiyatları</h3></div>
+                    </a>
+                    <a href="gallery-items/item-17/gallery-item-17-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item17-main-1.jpg" alt="Bilim Fuarı Projesi" loading="lazy"></div>
+                        <div class="project-content"><h3>Bilim Fuarı Projesi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-18/gallery-item-18-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item18-main-1.jpg" alt="Robotik Yarışması" loading="lazy"></div>
+                        <div class="project-content"><h3>Robotik Yarışması</h3></div>
+                    </a>
+                    <a href="gallery-items/item-19/gallery-item-19-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item19-main-1.jpg" alt="Doğa Kampı" loading="lazy"></div>
+                        <div class="project-content"><h3>Doğa Kampı</h3></div>
+                    </a>
+                    <a href="gallery-items/item-20/gallery-item-20-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item20-main-1.jpg" alt="Kültür Gezisi" loading="lazy"></div>
+                        <div class="project-content"><h3>Kültür Gezisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-21/gallery-item-21-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item21-main-1.jpg" alt="Sanat Sergisi" loading="lazy"></div>
+                        <div class="project-content"><h3>Sanat Sergisi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-22/gallery-item-22-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item22-main-1.jpg" alt="Spor Turnuvası" loading="lazy"></div>
+                        <div class="project-content"><h3>Spor Turnuvası</h3></div>
+                    </a>
+                    <a href="gallery-items/item-23/gallery-item-23-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item23-main-1.jpg" alt="Müzik Festivali" loading="lazy"></div>
+                        <div class="project-content"><h3>Müzik Festivali</h3></div>
+                    </a>
+                    <a href="gallery-items/item-24/gallery-item-24-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item24-main-1.jpg" alt="Topluluk Hizmeti" loading="lazy"></div>
+                        <div class="project-content"><h3>Topluluk Hizmeti</h3></div>
+                    </a>
+                    <a href="gallery-items/item-25/gallery-item-25-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item25-main-1.jpg" alt="Dil Kulübü" loading="lazy"></div>
+                        <div class="project-content"><h3>Dil Kulübü</h3></div>
+                    </a>
+                    <a href="gallery-items/item-26/gallery-item-26-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item26-main-1.jpg" alt="Tarih Projesi" loading="lazy"></div>
+                        <div class="project-content"><h3>Tarih Projesi</h3></div>
+                    </a>
+                    <a href="gallery-items/item-27/gallery-item-27-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item27-main-1.jpg" alt="Yazılım Hackathonu" loading="lazy"></div>
+                        <div class="project-content"><h3>Yazılım Hackathonu</h3></div>
+                    </a>
+                    <a href="gallery-items/item-28/gallery-item-28-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item28-main-1.jpg" alt="Lise Mezuniyeti" loading="lazy"></div>
+                        <div class="project-content"><h3>Lise Mezuniyeti</h3></div>
+                    </a>
+                    <a href="gallery-items/item-29/gallery-item-29-tr.html" class="project-card">
+                        <div class="project-image"><img src="images/item29-main-1.jpg" alt="Gallery Item 29" loading="lazy"></div>
+                        <div class="project-content"><h3>Gallery Item 29</h3></div>
+                    </a>

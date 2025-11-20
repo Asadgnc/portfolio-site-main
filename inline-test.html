@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="UTF-8"><title>Inline Test</title></head>
+<body>
+<h1>Inline Script Test</h1>
+<div id="projects-preview-grid" style="border: 2px solid red; padding: 20px;"></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM loaded");
+    const container = document.getElementById("projects-preview-grid");
+    console.log("Container:", container);
+    if(container) {
+        container.innerHTML = "<p style='color: lime;'>SUCCESS! Container found and updated!</p>";
+    }
+});
+</script>
+</body>
+</html>
