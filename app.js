@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         galleryData.forEach(item => {
             const a = document.createElement('a');
-            a.className = 'project-card';
+            a.className = 'gallery-card';
             a.href = item.page;
             a.title = item.title;
 
