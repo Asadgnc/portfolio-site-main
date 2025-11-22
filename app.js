@@ -219,4 +219,74 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })();
 
+    /* -------------------------
+       SCROLL-TRIGGERED TIMELINE ANIMATION
+       Timeline kartları scroll'da beliriyor
+       ------------------------- */
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    // Timeline itemları gözlemle
+    const timelineItems = document.querySelectorAll('.timeline-simple-item');
+    timelineItems.forEach(item => {
+        timelineObserver.observe(item);
+    });
+
+    /* -------------------------
+       MAGNETIC GLOW EFFECT - Mouse takibi
+       Kartın üzerinde mouse hareket ettikçe glow efekti takip ediyor
+       ------------------------- */
+    timelineItems.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            
+            card.style.setProperty('--mouse-x', `${x}%`);
+            card.style.setProperty('--mouse-y', `${y}%`);
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.setProperty('--mouse-x', '50%');
+            card.style.setProperty('--mouse-y', '50%');
+        });
+    });
+
+    /* -------------------------
+       TIMELINE PAGE - Full timeline items
+       Timeline sayfasındaki tüm timeline itemlar için aynı efektler
+       ------------------------- */
+    const timelinePageItems = document.querySelectorAll('.timeline-item');
+    
+    if (timelinePageItems.length > 0) {
+        timelinePageItems.forEach(item => {
+            timelineObserver.observe(item);
+            
+            // Mouse tracking
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                
+                item.style.setProperty('--mouse-x', `${x}%`);
+                item.style.setProperty('--mouse-y', `${y}%`);
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                item.style.setProperty('--mouse-x', '50%');
+                item.style.setProperty('--mouse-y', '50%');
+            });
+        });
+    }
+
 });
