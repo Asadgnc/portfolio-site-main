@@ -88,19 +88,75 @@ body {
     overflow-x: hidden;
 }
 
-/* Arka plan animasyonları kaldırıldı - düz koyu arka plan */
-
+/* Liquid Glass Aurora Background */
 body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(44, 204, 167, 0.35), transparent 30%),
+        radial-gradient(circle at 60% 70%, rgba(138, 43, 226, 0.28), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(0, 191, 255, 0.25), transparent 30%),
+        radial-gradient(circle at 40% 80%, rgba(255, 20, 147, 0.22), transparent 30%);
+    filter: blur(80px);
+    animation: liquidMove 25s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -2;
+    opacity: 1;
+}
+
+/* Glass Orbs Layer */
+body::after {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    background-image: 
+        radial-gradient(circle at 15% 25%, rgba(44, 204, 167, 0.4) 0%, transparent 15%),
+        radial-gradient(circle at 85% 15%, rgba(138, 43, 226, 0.35) 0%, transparent 12%),
+        radial-gradient(circle at 70% 80%, rgba(0, 191, 255, 0.38) 0%, transparent 18%),
+        radial-gradient(circle at 30% 90%, rgba(255, 20, 147, 0.3) 0%, transparent 14%),
+        radial-gradient(circle at 50% 40%, rgba(255, 215, 0, 0.2) 0%, transparent 10%);
+    filter: blur(50px);
+    animation: orbFloat 20s ease-in-out infinite alternate;
     pointer-events: none;
     z-index: -1;
-    opacity: 0.5;
+    mix-blend-mode: screen;
+}
+
+@keyframes liquidMove {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    33% {
+        transform: translate(30px, -40px) rotate(120deg) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 30px) rotate(240deg) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes orbFloat {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-30px, -30px) scale(1.15);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(20px, 20px) scale(0.9);
+        opacity: 0.85;
+    }
 }
 
 /* ===== GLOBAL CONTAINER SYSTEM ===== */
@@ -904,22 +960,6 @@ header {
     opacity: 1;
 }
 
-/* Animated mesh gradient */
-.timeline-simple-item::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: 
-        radial-gradient(circle at 30% 30%, rgba(138, 43, 226, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 70% 70%, rgba(0, 191, 255, 0.1) 0%, transparent 40%);
-    animation: meshRotate 15s linear infinite;
-    pointer-events: none;
-    opacity: 0.6;
-}
-
 .timeline-simple-item:hover {
     transform: translateY(-20px) scale(1.05);
     border-color: rgba(44, 204, 167, 0.3);
@@ -1033,15 +1073,6 @@ header {
     }
     50% {
         transform: translateY(-8px);
-    }
-}
-
-@keyframes meshRotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }
 
@@ -1267,22 +1298,6 @@ header {
 
 .timeline-item:hover::before {
     opacity: 1;
-}
-
-/* Animated mesh gradient */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: 
-        radial-gradient(circle at 30% 30%, rgba(138, 43, 226, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 70% 70%, rgba(0, 191, 255, 0.1) 0%, transparent 40%);
-    animation: meshRotate 15s linear infinite;
-    pointer-events: none;
-    opacity: 0.6;
 }
 
 .timeline-item:hover {
