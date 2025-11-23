@@ -763,7 +763,7 @@ header {
 /* görsel alanı */
 .projects-preview-grid .project-image,
 .projects-preview-grid .card-image {
-    height: 240px;
+    height: 300px;
     background-color: #0e0e0e;
     overflow: hidden;
     display: block;
@@ -774,10 +774,12 @@ header {
 .projects-preview-grid .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
     position: relative;
     z-index: 1;
+    background-color: #0e0e0e;
 }
 
 /* Görseli <img> ile gösterme: object-fit kullan */
@@ -785,10 +787,12 @@ header {
 .projects-preview-grid .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
     transform-origin: center;
     transition: transform 0.4s ease;
+    background-color: #0e0e0e;
 }
 
 .projects-preview-grid .project-card:hover .project-image img,
@@ -2541,8 +2545,8 @@ body:not(.home) .about-main-content .about-image-block img:hover {
 /* Modern responsive grid - Pinterest tarzı */
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
     width: 100%;
 }
 
@@ -2551,9 +2555,9 @@ body:not(.home) .about-main-content .about-image-block img:hover {
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-md);
-    aspect-ratio: 3/2;
     box-shadow: var(--shadow-subtle);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #0e0e0e;
 }
 
 .photo-grid a:hover {
@@ -2562,15 +2566,16 @@ body:not(.home) .about-main-content .about-image-block img:hover {
 }
 
 .photo-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 400%;
+    height: auto;
     display: block;
     transition: transform 0.3s ease;
+    margin-left: -150%;
+    margin-right: -150%;
 }
 
 .photo-grid a:hover img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* Tablet için düzenlemeler */
@@ -2581,8 +2586,14 @@ body:not(.home) .about-main-content .about-image-block img:hover {
     }
     
     .photo-grid {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 18px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .photo-grid img {
+        width: 200%;
+        margin-left: -50%;
+        margin-right: -50%;
     }
     
     .photo-gallery-bottom h2 {
@@ -2602,12 +2613,18 @@ body:not(.home) .about-main-content .about-image-block img:hover {
     }
     
     .photo-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 14px;
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
     
     .photo-grid a {
         border-radius: 8px;
+    }
+    
+    .photo-grid img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .photo-gallery-bottom h2 {
