@@ -2639,3 +2639,93 @@ body:not(.home) .about-main-content .about-image-block img:hover {
 }
 
 /* Son olarak: ana sayfa stillerini bozmayacak şekilde specificity yüksek tutuldu */
+
+/* ABOUT TR – GÜMÜŞ METİN LAYOUT */
+
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* Her blok: solda büyük figür, sağda metin */
+.about-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-block--last {
+  margin-bottom: 0;
+}
+
+.about-illustration {
+  flex: 0 0 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Figürler büyük, paragrafa yakın boyutta */
+.about-illustration img,
+.about-illustration svg {
+  width: 100%;
+  max-width: 230px;  /* paragraf genişliğinden biraz küçük */
+  height: auto;
+  display: block;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1,
+.about-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.7rem;
+}
+
+/* Daha küçük ekranlarda alt alta gelsin */
+@media (max-width: 800px) {
+  .about-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-illustration {
+    flex: none;
+    width: 70%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-page {
+    padding: 2.5rem 1.1rem 3rem;
+  }
+
+  .about-illustration {
+    width: 80%;
+  }
+
+  .about-content h1,
+  .about-content h2 {
+    font-size: 1.15rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+}

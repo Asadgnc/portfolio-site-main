@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Haqimda - Asadbek Kenjaev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <header>
+        <div class="main-container header-content">
+            <a href="../../uz.html" class="logo">Asadbek Kenjaev</a>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+        <!-- Sabit sağ üstte görünecek dil + contact konteyneri -->
+        <div class="top-controls" aria-hidden="false">
+            <ul class="lang-switcher">
+                <li><a href="about.html" class="lang-inactive">EN</a></li>
+                <li><a href="about-tr.html" class="lang-inactive">TR</a></li>
+                <li><a href="about-ru.html" class="lang-inactive">RU</a></li>
+                <li><a href="about-uz.html" class="lang-active">UZ</a></li>
+                <li><a href="about-uz-cyrl.html" class="lang-inactive">ЎЗ</a></li>
+            </ul>
+            <a href="../contact/contact-uz.html" class="btn btn-primary nav-contact-btn">Aloqa</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- NAV: Ana sayfadaki gibi navbar -->
+        <div class="nav-bar-wrapper" id="main-nav">
+            <div class="main-container nav-bar-content">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="about-uz.html" class="nav-active">Men Haqimda</a></li>
+                        <li><a href="../timeline/timeline-uz.html">Vaqt chizig'i</a></li>
+                        <li><a href="../gallery/gallery-uz.html">Galereya</a></li>
+                        <li><a href="../projects/projects-uz.html">Loyihalar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-content">
+        <div class="container">
+            <section id="about-new" class="about-page-grid">
+
+                <aside class="about-side-heading">
+                    <h2>MENING HIKOYAM</h2>
+                </aside>
+
+                <div class="about-main-content">
+                    
+                    <div class="about-text-block">
+                        <h3>Mening hikoyam</h3>
+                        <p>
+                            Bolaligimdan beri koinot sirlari meni hayratda qoldirgan. Ko'pgina do'stlarim o'yin o'ynar ekan, men yulduzlar, qora tuynuklar va kvant mexanikasi haqida o'qirdim, doimo "nega" va "qanday" degan savollarni berardim. Bu qiziqish meni fizikaga olib keldi va men naqshlar, mantiq va cheksiz savollar bilan belgilangan dunyoni kashf qildim.
+                        </p>
+                        <p>
+                            Tez orada sun'iy intellekt ham o'sha hayrat tuyg'usini baham ko'rishini angladim—bu yashirin tuzilmalarni ochish, murakkab muammolarni hal qilish va ilmiy usulni aks ettiruvchi usullarda ma'lumotlardan o'rganish uchun vosita. Mening ishtiyoqim shunchaki koinotni tushunishdan, uni tushunishga yordam beradigan vositalarni yaratishga o'tdi.
+                        </p>
+                    </div>
+
+                    <div class="about-image-block">
+                        <img src="../../images/item28-main-1.jpg" alt="Fizika yoki kod tasviri">
+                    </div>
+
+                    <div class="about-text-block">
+                        <h3>Yo'limni topish</h3>
+                        <p>
+                            Mening akademik sayohatim texnologiya va insoniy salohiyat kesishmasini o'rganish haqida bo'ldi. Men fizika tadqiqotlariga sho'ng'idim, AI loyihalarini qurdim va, xuddi shunday muhimi, boshqa talabalarga murabbiylik qilishga o'zimni bag'ishladim.
+                        </p>
+                        <p>
+                            O'quvchilarni o'zlarining akademik qiyinchiliklarida yo'naltirish—SAT, TOEFL yoki IELTSga tayyorlanish, ariza esselerini va rezyumelarni ko'rib chiqish, karyera yo'llarini rejalashtirish—menga muhim saboq berdi: bilim baham ko'rilganda eng kuchli. Haqiqiy muvaffaqiyat shunchaki yuqori ball olish emas; bu umr bo'yi davom etadigan ishonch va tushunchani qurish.
+                        </p>
+                    </div>
+
+                    <div class="about-image-block">
+                        <img src="../../images/item13-main-1.jpg" alt="Murabbiylik yoki hamkorlik tasviri">
+                    </div>
+
+                    <div class="about-text-block">
+                        <h3>Ishtiyoqimga ergashish</h3>
+                        <p>
+                            Men fan va texnologiyaga bo'lgan sevgimni o'rganishni yanada intuitiv va mazmunli qilish intilishi bilan birlashtiraman. Qiyin tushunchalarni oddiy tushunchalarga aylantirish, samarali o'rganish strategiyalarini yaratish va talabalarni haqiqiy natijalarga erishishga kuch-qudrat berish menga yoqadi. Mening ishim qiziquvchanlik, o'sish va kuch-qudrat bilan boshqariladi.
+                        </p>
+
+                        <h3>Kelajakka nazar</h3>
+                        <p>
+                            Har bir loyiha, tadqiqot maqolasi va murabbiylik sessiyasi kattaroq maqsadning bir qismi: murakkab texnologiya va undan foydalanadigan odamlar o'rtasida ko'prik qurish. Men qiziquvchanlikni rag'batlantirmoqchiman, tushunishni rivojlantirmoqchiman va boshqalarga o'z salohiyatlarini anglamalariga yordam bermoqchiman—chunki o'rganish biz birgalikda qiladigan sayohat va men bu sayohatni kashf etishga tayyor har kim bilan baham ko'rishdan xursandman.
+                        </p>
+                    </div>
+                    
+                    <div class="about-image-block">
+                        <img src="../../images/item26-sub-6.jpg" alt="Texnologiya yoki kelajak tasviri">
+                    </div>
+
+                    <div class="about-text-block">
+                        <h3>Asosiy ko'nikmalar va sevimli mashg'ulotlar</h3>
+                        <p>
+                            Kod va tushunchalardan tashqari, men muvozanatli ongga ishonaman. Mening analitik ko'nikmalarim nafaqat algoritmlar, balki professional shaxmat strategiyalari bilan ham o'tkirlashadi. Va ha, men qo'shiq ham aytaman.
+                        </p>
+                        <div class="about-details-inline">
+                            <h4>Mening asosiy ko'nikmalarim</h4>
+                            <ul class="tech-list-inline">
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>AI & ML tushunchalari</li>
+                                <li>Blockchain tushunchalari</li>
+                                <li>Analitik muammolarni hal qilish</li>
+                                <li>Professional shaxmat</li>
+                                <li>Qo'shiq aytish</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div> </section> </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Asadbek Kenjaev. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+</body>
+</html>
